@@ -23,11 +23,11 @@ KISSY.use("gallery/kcharts/1.2/linechart/index",function(S,LineChart){
         }
       },
       title:{
-              content:"é“¶å¸æˆäº¤ä»·"
+              content:"Òø±Ò³É½»¼Û"
             },
             anim:{},
             subTitle:{
-              content:"æ•°æ®æ¥æº: www.guruquan.com"
+              content:"Êı¾İÀ´Ô´: www.guruquan.com"
             },
             lineType:"arc",
        xAxis: {
@@ -39,15 +39,15 @@ KISSY.use("gallery/kcharts/1.2/linechart/index",function(S,LineChart){
             },
           comparable:true,
       series:[{
-				text: 'æœ€é«˜ä¹°ç›˜',
+				text: '×î¸ßÂòÅÌ',
                 data: [110, 110, 110, 110, 110, 110, 110, 110, 110, 110, 110, 110]
             }, {
-                text: 'æˆäº¤ä»·',
+                text: '³É½»¼Û',
                 data: [99, 95, 101, 108, 103, 90, 97, 91, 90, 90, 90, 96]
             }
             , {
                 
-				text: 'æœ€ä½å–ç›˜',
+				text: '×îµÍÂôÅÌ',
                 data: [90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90]
             }
             ],
@@ -62,7 +62,7 @@ KISSY.use("gallery/kcharts/1.2/linechart/index",function(S,LineChart){
         template:function(e){
           var html = "";
           for(var i in e.datas){
-            html +="<span style='font-size:10px;color:"+e.datas[i]['color']+"'>"+e.datas[i]['text'] +" "+e.datas[i]['y']+" ã„“/10å…ƒ</span><br/>"
+            html +="<span style='font-size:10px;color:"+e.datas[i]['color']+"'>"+e.datas[i]['text'] +" "+e.datas[i]['y']+" ¨Ó/10Ôª</span><br/>"
           }
           return html;
         }

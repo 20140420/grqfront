@@ -1,10 +1,14 @@
 <%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8" />
 <title>主页</title>
-<link href="../../css/web.css" rel="stylesheet" type="text/css" />
+<link href="<%=basePath%>/css/web.css" rel="stylesheet" type="text/css" />
 <!--<link rel="stylesheet" href="css_example_url" />
 <script src="js_example_url"></script>-->
 <script src="../../js/jquery.js"></script>
@@ -17,7 +21,7 @@
             <!--<div class="content-welcome">
             欢迎 Welcome! </div>-->
 			<div class="content-welcome">
-				<iframe border="0" id="content" src="pic-index.html" frameborder="0" height="100%" width="100%"></iframe>
+				<iframe border="0" id="content" src="<%=basePath%>/WEB-INF/pages/pic-index.html" frameborder="0" height="100%" width="100%"></iframe>
 			</div><!---->
 			<div class="menu-control">
                 <ul>

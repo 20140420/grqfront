@@ -19,7 +19,7 @@
             Chat.socket.onopen = function () {
                 Console.log('Info: WebSocket connection opened.');
                 document.getElementById('chat').onkeydown = function(event) {
-                    if (event.keyCode == 13) {/*è¿™é‡Œæ˜¯ä½¿ç”¨å›žè½¦é”®æ¥æ¿€å‘äº‹ä»¶*/
+                    if (event.keyCode == 13) {/*ÕâÀïÊÇÊ¹ÓÃ»Ø³µ¼üÀ´¼¤·¢ÊÂ¼þ*/
                         Chat.sendMessage();
                     }
                 };
@@ -51,19 +51,19 @@
             var message = document.getElementById('chat').value;
             if (message != '') {
                 Chat.socket.send(message);
-                document.getElementById('chat').value = '';//æ¸…ç©ºå€¼ä¾›åœ¨è°ƒç”¨
+                document.getElementById('chat').value = '';//Çå¿ÕÖµ¹©ÔÚµ÷ÓÃ
             }else {
-            	Console.log('ä½ æœªè¾“å…¥ï¼')
+            	Console.log('ÄãÎ´ÊäÈë£¡')
             }
         });
 
         Console.log = (function(message) {
             var console = document.getElementById('console');
             var p = document.createElement('p');
-            p.style.wordWrap = 'break-word';//é™åˆ¶è¿‡é•¿å†…å®¹åœ¨åŒºå—å†…æ˜¾ç¤º
+            p.style.wordWrap = 'break-word';//ÏÞÖÆ¹ý³¤ÄÚÈÝÔÚÇø¿éÄÚÏÔÊ¾
             p.innerHTML = message;
-            console.appendChild(p);//å°†èŠ‚ç‚¹På…ƒç´ åŠ åˆ°consoleæœ«å°¾
-            while (console.childNodes.length > 25) {//é™åˆ¶ä»…ä»…è®°å½•25æ¡è®°å½•
+            console.appendChild(p);//½«½ÚµãPÔªËØ¼Óµ½consoleÄ©Î²
+            while (console.childNodes.length > 25) {//ÏÞÖÆ½ö½ö¼ÇÂ¼25Ìõ¼ÇÂ¼
                 console.removeChild(console.firstChild);
             }
             console.scrollTop = console.scrollHeight;

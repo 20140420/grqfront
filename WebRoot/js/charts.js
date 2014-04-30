@@ -23,13 +23,13 @@ KISSY.use("gallery/kcharts/1.2/linechart/index",function(S,LineChart){
         }
       },
       title:{
-              content:"银币成交价"
+              content:"Silver price"
             },
             anim:{},
             subTitle:{
-              content:"数据来源: www.guruquan.com"
+              content:"Source: www.guruquan.com"
             },
-            lineType:"arc",
+            lineType:"straight",
        xAxis: {
           text:['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
                     'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
@@ -39,15 +39,15 @@ KISSY.use("gallery/kcharts/1.2/linechart/index",function(S,LineChart){
             },
           comparable:true,
       series:[{
-				text: '最高买盘',
+				text: 'bid price',
                 data: [110, 110, 110, 110, 110, 110, 110, 110, 110, 110, 110, 110]
             }, {
-                text: '成交价',
+                text: 'strike price',
                 data: [99, 95, 101, 108, 103, 90, 97, 91, 90, 90, 90, 96]
             }
             , {
                 
-				text: '最低卖盘',
+				text: 'ask price',
                 data: [90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90]
             }
             ],
@@ -62,7 +62,7 @@ KISSY.use("gallery/kcharts/1.2/linechart/index",function(S,LineChart){
         template:function(e){
           var html = "";
           for(var i in e.datas){
-            html +="<span style='font-size:10px;color:"+e.datas[i]['color']+"'>"+e.datas[i]['text'] +" "+e.datas[i]['y']+" ㄓ/10元</span><br/>"
+            html +="<span style='font-size:10px;color:"+e.datas[i]['color']+"'>"+e.datas[i]['text'] +" "+e.datas[i]['y']+"\</span><br/>";
           }
           return html;
         }
@@ -70,4 +70,4 @@ KISSY.use("gallery/kcharts/1.2/linechart/index",function(S,LineChart){
   });
 
 });
-}//]]>
+};//]]>

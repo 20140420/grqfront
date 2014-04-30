@@ -4,7 +4,7 @@
 	<!-- 前台登录 -->
 	<package name="grq-front" namespace="/" extends="struts-default">
 
-		<action name="login"  class="springLoginAction">
+		<action name="index"  class="springIndexAction">
 			<result name="INDEX">/WEB-INF/pages/index.jsp</result>
 		</action>
 	</package>

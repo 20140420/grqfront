@@ -16,26 +16,28 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <link href="${context_path}/css/web.css" rel="stylesheet" type="text/css" />
 <!--<link rel="stylesheet" href="css_example_url" />
 <script src="js_example_url"></script>-->
-<script src="../../js/jquery.js"></script>
+<script src="${context_path}/js/jquery.js"></script>
 </head>
 <body>
 <div class="container">
-	<div class="header"><%@ include file="header.jsp"%> <!--end .header --></div>
+	<div class="header"><!--start .header --><%@ include file="header.jsp" %> <!--end .header --></div>
 	<div class="content">
       <div class="index">
-            <!--<div class="content-welcome">
-            欢迎 Welcome! </div>-->
+      		<!-- 
+            <div class="content-welcome">
+            	欢迎 Welcome!
+            </div>-->
 			<div class="content-welcome">
-				<iframe border="0" id="content" src="<%=basePath%>/WEB-INF/pages/pic-index.html" frameborder="0" height="100%" width="100%"></iframe>
+				<iframe border="0" id="content" src="index-pic.html" frameborder="0" height="100%" width="100%"></iframe>
 			</div><!---->
 			<div class="menu-control">
                 <ul>
-                <li><a href="shark/shark.jsp">金鲨银鲨</a></li>
-                <li><a href="snake/snake.jsp">小蛇快逃</a></li>
-                <li><a href="investment.jsp">投资理财</a></li>
-                <li><a href="preparing.jsp">网络电视</a></li>
-                <li><a href="charts.html">华文视角</a></li>
-                <li><a href="preparing.jsp">汽车强国</a></li>
+                <li><a href="shark/shark.jsp" target="_blank">金鲨银鲨</a></li>
+                <li><a href="snake/snake.jsp" target="_blank">小蛇快逃</a></li>
+                <li><a href="investment.html" target="_blank">投资理财</a></li>
+                <li><a href="charts.html" target="_blank">实时价格</a></li>
+                <li><a href="plan.html" target="_blank">网络电视</a></li>                
+                <li><a href="plan.html" target="_blank">汽车强国</a></li>
               </ul>
             </div>       
       </div> <!-- index END -->

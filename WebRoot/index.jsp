@@ -4,8 +4,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<title>缓冲页面</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<META HTTP-EQUIV="Refresh" CONTENT="1; URL=click.jsp">
+<META HTTP-EQUIV="Refresh" CONTENT="0; URL=click.jsp">
 </head>
 <body>
 <center>

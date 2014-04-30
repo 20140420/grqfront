@@ -6,7 +6,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 	
 	<!-- 用spring支持strut与Action类的链接 -->
-	<bean id="springLoginAction" class="com.grq.controller.action.LoginAction">
+	<bean id="springIndexAction" class="com.grq.controller.action.IndexAction">
 	</bean>
 
 

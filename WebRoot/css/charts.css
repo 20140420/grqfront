@@ -3,7 +3,11 @@
 
 /* reset */
 #demo1{
-  width:450px;
-  height:200px;
+	/* 
+	width:450px;
+	height:200px;
+	 */
+  width:750px;
+  height:500px;
   margin:0px auto;
 }

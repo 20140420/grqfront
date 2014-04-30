@@ -2,18 +2,18 @@
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
 	
-	<!-- 前台管理的Struts2配置文件 
-	<include file="com/grq/model/struts-front.xml"></include> -->
+	<!-- 前台管理的Struts2配置文件 -->
+	<include file="com/grq/controller/struts-front.xml"></include> 
 	<!-- 后台管理的Struts2配置文件 
-	<include file="com/grq/model/struts-back.xml"></include> -->
-	<!-- 默认前后台公共视图的映射 
-	<include file="com/grq/model/struts-default.xml"></include>-->
-	<package name="grq" extends="struts-default">
-		<action name="login" class="com.LoginAction">
+	<include file="com/grq/controller/struts-back.xml"></include> -->
+	<!-- 默认前后台公共视图的映射
+	<include file="com/grq/controller/struts-default.xml"></include> -->
+	<!-- <package name="grq" namespace="/" extends="struts-default">
+		<action name="login" class="com.grq.controller.action.LoginAction">
 			<result name="INDEX">/WEB-INF/pages/index.jsp</result>
 			<result name="SUCCESS">/WEB-INF/pages/Success.jsp</result>
 			<result name="FAILURE">/WEB-INF/pages/Failure.jsp</result>
 		</action>
-	</package>
+	</package> -->
 	
 </struts>    

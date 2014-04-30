@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<META HTTP-EQUIV="Refresh" CONTENT="2; URL=click.jsp">
+<META HTTP-EQUIV="Refresh" CONTENT="1; URL=click.jsp">
 </head>
 <body>
 <center>

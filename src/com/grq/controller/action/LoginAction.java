@@ -1,4 +1,4 @@
-package com;
+package com.grq.controller.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 

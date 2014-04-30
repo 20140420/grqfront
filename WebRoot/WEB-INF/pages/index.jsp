@@ -3,12 +3,17 @@
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
+<%@ taglib prefix="s" uri="/struts-tags"%>
+<s:set var="context_path"
+	value="#request.get('javax.servlet.forward.context_path')"></s:set>
 <!doctype html>
 <html>
 <head>
+<base href="<%=basePath%>">
+
 <meta charset="utf-8" />
 <title>主页</title>
-<link href="<%=basePath%>/css/web.css" rel="stylesheet" type="text/css" />
+<link href="${context_path}/css/web.css" rel="stylesheet" type="text/css" />
 <!--<link rel="stylesheet" href="css_example_url" />
 <script src="js_example_url"></script>-->
 <script src="../../js/jquery.js"></script>

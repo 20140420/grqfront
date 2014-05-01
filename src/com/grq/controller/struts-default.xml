@@ -6,14 +6,14 @@
 	<constant name="struts.ognl.allowStaticMethodAccess" value="true"/>
 	<package name="grq-default" extends="struts-default" abstract="true">
 		<global-results>
-			<!-- 程序front主页面 -->
-			<result name="INDEX">/WEB-INF/pages/index.jsp</result>
+			<!-- 程序front主页面非直接进入 -->
+			<result name="index" type="redirectAction"></result>
 			<!-- 程序back管理主页面 -->	
 			<result name="manager"></result>
 			<!-- 错误页面 -->
 			<result name="error"></result>
 			<!--管理员登录-->
-            <result name="userLogin">/WEB-INF/pages/admin/admin_login.jsp</result>
+            <result name="userLogin"></result>
 			<!--会员注册 -->
             <result name="reg"></result>
             <!--会员登录-->

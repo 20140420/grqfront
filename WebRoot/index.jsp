@@ -6,7 +6,7 @@
 <head>
 <title>缓冲页面</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<META HTTP-EQUIV="Refresh" CONTENT="0; URL=click.jsp">
+<META HTTP-EQUIV="Refresh" CONTENT="0; URL=index">
 </head>
 <body>
 <center>

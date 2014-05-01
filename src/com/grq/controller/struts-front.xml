@@ -2,10 +2,10 @@
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
 	<!-- 前台登录 -->
-	<package name="grq-front" namespace="/" extends="struts-default">
-
-		<action name="index"  class="springIndexAction">
-			<result name="INDEX">/WEB-INF/pages/index.jsp</result>
+	<package name="grq-front" namespace="/" extends="grq-default">
+		<!-- 直接进入WEB-INF里面主页 采用默认 -->
+		<action name="index">
+			<result>/WEB-INF/pages/index.jsp</result>
 		</action>
 	</package>
 </struts>    

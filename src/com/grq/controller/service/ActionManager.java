@@ -9,14 +9,6 @@ import com.grq.model.dao.UserDAO;
 public interface ActionManager {
 	
 	/**
-	 * 根据邮箱、密码验证用户
-	 * @param email 查询所需的邮箱
-	 * @param password 查询所需的密码
-	 * @return 对应的用户
-	 */
-	Integer validLogin(String email, String password);
-	
-	/**
 	 * 
 	 * 
 	 */
@@ -27,5 +19,13 @@ public interface ActionManager {
 	 * 
 	 */
 	public void setUserDAO(UserDAO userDAO);
+	
+	/**
+	 * 根据邮箱、密码验证用户
+	 * @param email 查询所需的邮箱
+	 * @param password 查询所需的密码
+	 * @return 对应的用户
+	 */
+	Integer validLogin(String email, String password);
 
 }

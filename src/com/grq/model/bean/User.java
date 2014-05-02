@@ -1,6 +1,7 @@
 package com.grq.model.bean;
 // default package
 
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -12,7 +13,11 @@ import java.util.Set;
 public class User  implements java.io.Serializable {
 
 
-    // Fields    
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	// Fields    
 
      private Integer userId;
      private Employee employee;

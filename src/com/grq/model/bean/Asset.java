@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 
+
 /**
  * Asset entity. @author MyEclipse Persistence Tools
  */
@@ -14,7 +15,11 @@ public class Asset  implements java.io.Serializable {
 
     // Fields    
 
-     private Integer assetId;
+     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private Integer assetId;
      private User user;
      private Silver silver;
      private RMB RMB;

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table name="tb_user" catalog="guruquan" class="User"></table>
+	<table name="tb_silver" catalog="guruquan" class="Silver"></table>
+	<table name="tb_silver_profit" catalog="guruquan"
+		class="SilverProfit">
+	</table>
+	<table name="tb_rmb" catalog="guruquan" class="RMB"></table>
+	<table name="tb_giro_config" catalog="guruquan"
+		class="GiroConfig">
+	</table>
+	<table name="tb_giro_record" catalog="guruquan"
+		class="GiroRecord">
+	</table>
+	<table name="tb_asset" catalog="guruquan" class="Asset"></table>
+	<table name="tb_apprentice" catalog="guruquan" class="Apprentice"></table>
+	<table name="tb_chart" catalog="guruquan" class="Chart"></table>
+	<table name="tb_education" catalog="guruquan" class="Education"></table>
+	<table name="tb_employee" catalog="guruquan" class="Employee"></table>
+	<table name="tb_experience" catalog="guruquan" class="Experience"></table>
+	<table name="tb_game_config" catalog="guruquan"
+		class="GameConfig">
+	</table>
+	<table name="tb_game_record" catalog="guruquan"
+		class="GameRecord">
+	</table>
+	<table name="tb_game" catalog="guruquan" class="Game"></table>
+	<table name="tb_master" catalog="guruquan" class="Master"></table>
+	<table name="tb_player" catalog="guruquan" class="Player"></table>
+	<table name="tb_power_config" catalog="guruquan"
+		class="PowerConfig">
+	</table>
+	<table name="tb_prize" catalog="guruquan" class="Prize"></table>
+	<table name="tb_security" catalog="guruquan" class="Security"></table>
+	<table name="tb_system" catalog="guruquan" class="System"></table>
+	<table name="tb_u_online" catalog="guruquan" class="UOnline"></table>
+</hibernate-reverse-engineering>

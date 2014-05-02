@@ -3,7 +3,8 @@ package com.grq.model.dao.impl;
 import java.util.List;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
-import com.grq.model.bean.User;
+//import com.grq.model.bean.User;
+import com.bean.User;
 import com.grq.model.dao.UserDAO;
 
 public class UserDAOImpl extends HibernateDaoSupport implements UserDAO {
@@ -48,15 +49,15 @@ public class UserDAOImpl extends HibernateDaoSupport implements UserDAO {
 	@Override
 	public User findUserByEmailAndPass(String email, String password) {
 		// TODO Auto-generated method stub
-		System.out.println("验证用");
+		System.out.println("验证用,这里是UserDAOImpl文件");
 		//delete(2)；
 		//String() args=(username,password);
 		System.out.println("成功删除");
-		List ul =getHibernateTemplate().find("from com.grq.model.bean.User user where user.email = '"+email+"'and au.password = '"+password+"'");
+		List ul =getHibernateTemplate().find("from com.bean.User au where au.email = '"+email+"'and au.password = '"+password+"'");
 		
 		if(ul.size()==1)
 		{
-			System.out.println("OK 会员登入123");
+			System.out.println("OK 会员登入,这里是UserDAOImpl文件");
 			return (User)ul.get(0);
 		}
 		return null;

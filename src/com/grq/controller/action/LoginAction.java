@@ -17,7 +17,7 @@ public class LoginAction extends ActionSupport {
 	private String password;
 	
 	public String execute() throws Exception {
-		System.out.println("点击登录执行该方法");
+		System.out.println("点击登录执行该方法，这里是LoginAction文件");
 		if(email.equals("") || email == null){
 			return "FAILURE";
 		}
@@ -28,7 +28,7 @@ public class LoginAction extends ActionSupport {
 			return "login_user";
 		} else {
 			addActionError("邮箱/密码不匹配");
-			System.out.println("非法用户");
+			System.out.println("非法用户， 这里是LoginAction文件");
 			return "FAILURE";
 		}
 

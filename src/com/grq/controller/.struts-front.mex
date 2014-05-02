@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Struts2Diagram version="2.0">
-  <package name="grq-front" location="10,10" size="280,140">
-    <action name="index" location="65,57" size="150,41">
-      <result name="SUCCESS">
-        <resourceEdge source="SUCCESS" routing="0" target="index.jsp" />
+  <webResource name="index.jsp" path="/WEB-INF/pages/index.jsp" location="401,91" size="150,55" />
+  <webResource name="Success.jsp" path="/WEB-INF/pages/Success.jsp" location="409,266" size="150,55" />
+  <package name="grq-login" location="81,237" size="198,93">
+    <action name="login" location="26,44" size="150,41">
+      <result name="login_user">
+        <resourceEdge source="login_user" routing="0" target="Success.jsp" />
       </result>
     </action>
   </package>
-  <webResource name="index.jsp" path="/WEB-INF/pages/index.jsp" location="75,192" size="150,55" />
+  <package name="grq-front" location="81,46" size="201,96">
+    <action name="index" location="38,46" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index.jsp" />
+      </result>
+    </action>
+  </package>
 </Struts2Diagram>
 

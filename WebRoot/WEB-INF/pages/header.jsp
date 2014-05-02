@@ -7,7 +7,7 @@
         <div>
 			<%   if(2>1){//注意权限为游客时%>
             [<a href="register.jsp">注册</a>]|[<a href="login.jsp">登入</a>]
-            <%}else{%>
+            <% } else { %>
             <span>欢迎光临:<i><% %></i>[<a href="control/front/#">注销</a>]</span>
             <%}%>
         </div>

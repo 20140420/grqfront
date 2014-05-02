@@ -1,4 +1,4 @@
-
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <!doctype html>
 <html>
 <head>
@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="container">
-	<div class="header"></div><!-- end .header -->
+	<div class="header"><%@ include file="/WEB-INF/pages/header.jsp"%></div><!-- end .header -->
 	<div class="content">
 <div class="investment">
 <h1 style='text-align:center;'>
@@ -159,7 +159,7 @@
     <!--<div class="sidebar1">
         侧边（选择）
 	</div>-->   
-  <div class="footer"><!-- end .footer --></div>
+  <div class="footer"><%@ include file="/WEB-INF/pages/footer.jsp"%><!-- end .footer --></div>
 </div>
 <script>
 // 你的代码

@@ -10,13 +10,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <head>
 <base href="<%=basePath%>">
-
 <meta charset="utf-8" />
 <title>主页</title>
-<link href="${context_path}/css/web.css" rel="stylesheet" type="text/css" />
-<!--<link rel="stylesheet" href="css_example_url" />
-<script src="js_example_url"></script>-->
-<script src="${context_path}/js/jquery.js"></script>
+<!--<link href="css/web.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css_example_url" />
+<script src="js_example_url"></script>
+<script src="js/jquery.js" type="text/javascript"></script>-->
 </head>
 <body>
 <div class="container">
@@ -34,10 +33,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <ul>
                 <li><a href="shark/shark.jsp" target="_blank">金鲨银鲨</a></li>
                 <li><a href="snake/snake.jsp" target="_blank">小蛇快逃</a></li>
-                <li><a href="investment.html" target="_blank">投资理财</a></li>
+                <li><a href="investments.jsp" target="_blank">投资理财</a></li>
                 <li><a href="charts.html" target="_blank">实时价格</a></li>
-                <li><a href="plan.html" target="_blank">网络电视</a></li>                
-                <li><a href="plan.html" target="_blank">汽车强国</a></li>
+                <li><a href="plans.jsp" target="_blank">网络电视</a></li>                
+                <li><a href="plans.jsp" target="_blank">汽车强国</a></li>
               </ul>
             </div>       
       </div> <!-- index END -->

@@ -4,13 +4,13 @@
 <head>
 <meta charset="utf-8" />
 <title>游戏排名</title>
-<link href="../../css/web.css" rel="stylesheet" type="text/css" />
-<!--<link rel="stylesheet" href="css_example_url" />
+<!--<link href="../../css/web.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css_example_url" />
 <script src="js_example_url"></script>-->
 </head>
 <body>
 <div class="container">
-	<div class="header"><%@ include file="header.jsp"%></div><!-- end .header -->
+	<div class="header"><%@ include file="/WEB-INF/pages/header.jsp"%></div><!-- end .header -->
 	<div class="content">
 	    <div class="ranking">
 	      <table border="1">
@@ -587,7 +587,7 @@
     <!--<div class="sidebar1">
         侧边（选择）
 	</div>-->   
-  <div class="footer"><%@ include file="footer.jsp"%><!-- end .footer --></div>
+  <div class="footer"><%@ include file="/WEB-INF/pages/footer.jsp"%><!-- end .footer --></div>
 </div>
 <script>
 // 你的代码

@@ -19,28 +19,28 @@
 			com.mysql.jdbc.Driver
 		</property>
 		<property name="myeclipse.connection.profile">grq</property>
-		<mapping resource="./User.hbm.xml" />
-		<mapping resource="./Silver.hbm.xml" />
-		<mapping resource="./SilverProfit.hbm.xml" />
-		<mapping resource="./RMB.hbm.xml" />
-		<mapping resource="./GiroConfig.hbm.xml" />
-		<mapping resource="./GiroRecord.hbm.xml" />
-		<mapping resource="./Asset.hbm.xml" />
-		<mapping resource="./Apprentice.hbm.xml" />
-		<mapping resource="./Chart.hbm.xml" />
-		<mapping resource="./Education.hbm.xml" />
-		<mapping resource="./Employee.hbm.xml" />
-		<mapping resource="./Experience.hbm.xml" />
-		<mapping resource="./GameConfig.hbm.xml" />
-		<mapping resource="./GameRecord.hbm.xml" />
-		<mapping resource="./Game.hbm.xml" />
-		<mapping resource="./Master.hbm.xml" />
-		<mapping resource="./Player.hbm.xml" />
-		<mapping resource="./PowerConfig.hbm.xml" />
-		<mapping resource="./Prize.hbm.xml" />
-		<mapping resource="./Security.hbm.xml" />
-		<mapping resource="./System.hbm.xml" />
-		<mapping resource="./UOnline.hbm.xml" />
+		<mapping resource="com/grq/model/bean/User.hbm.xml" />
+		<mapping resource="com/grq/model/bean/Silver.hbm.xml" />
+		<mapping resource="com/grq/model/bean/SilverProfit.hbm.xml" />
+		<mapping resource="com/grq/model/bean/RMB.hbm.xml" />
+		<mapping resource="com/grq/model/bean/GiroConfig.hbm.xml" />
+		<mapping resource="com/grq/model/bean/GiroRecord.hbm.xml" />
+		<mapping resource="com/grq/model/bean/Asset.hbm.xml" />
+		<mapping resource="com/grq/model/bean/Apprentice.hbm.xml" />
+		<mapping resource="com/grq/model/bean/Chart.hbm.xml" />
+		<mapping resource="com/grq/model/bean/Education.hbm.xml" />
+		<mapping resource="com/grq/model/bean/Employee.hbm.xml" />
+		<mapping resource="com/grq/model/bean/Experience.hbm.xml" />
+		<mapping resource="com/grq/model/bean/GameConfig.hbm.xml" />
+		<mapping resource="com/grq/model/bean/GameRecord.hbm.xml" />
+		<mapping resource="com/grq/model/bean/Game.hbm.xml" />
+		<mapping resource="com/grq/model/bean/Master.hbm.xml" />
+		<mapping resource="com/grq/model/bean/Player.hbm.xml" />
+		<mapping resource="com/grq/model/bean/PowerConfig.hbm.xml" />
+		<mapping resource="com/grq/model/bean/Prize.hbm.xml" />
+		<mapping resource="com/grq/model/bean/Security.hbm.xml" />
+		<mapping resource="com/grq/model/bean/System.hbm.xml" />
+		<mapping resource="com/grq/model/bean/UOnline.hbm.xml" />
 	</session-factory>
 
 </hibernate-configuration>

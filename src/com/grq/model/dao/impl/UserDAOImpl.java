@@ -46,7 +46,7 @@ public class UserDAOImpl extends HibernateDaoSupport implements UserDAO {
 	}
 
 	@Override
-	public User findUserByNameAndPass(String email, String password) {
+	public User findUserByEmailAndPass(String email, String password) {
 		// TODO Auto-generated method stub
 		System.out.println("—È÷§”√");
 		//delete(2)£ª

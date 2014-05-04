@@ -6,21 +6,21 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 	
 	<!-- 用spring支持strut与Action类的链接 -->
-	
-	<!-- login_user -->
+	<!-- mgr采用 Spring依赖注入 -->
 	<bean id="mgr" class="com.grq.controller.service.impl.ActionManagerImpl">
 		<property name="userDAO" ref="hmpuserDAO"></property>
 	</bean>	
-	
-	<bean id="springLoginAction" class="com.grq.controller.action.LoginAction">
-		<property name="mgr" ref="mgr"></property>
-	</bean>	
-
 	<bean id="hmpuserDAO" class="com.grq.model.dao.impl.UserDAOImpl">
 		<property name="sessionFactory">
 			<ref local="sessionFactory"/>		
 		</property>	
-	</bean>
+	</bean>	
+	<bean id="springLoginAction" class="com.grq.controller.action.LoginAction">
+		<property name="mgr" ref="mgr"></property>
+	</bean>	
+
+	<bean id="indexMenuAction" class="com.grq.controller.action.IndexMenuAction">
+	</bean>	
 	
 
 	<!-- 添加hibernate文件支持，用hibernate.cfg.xml链接数据库 -->

@@ -23,6 +23,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    login_user登录成功！spring
+    login_user登录成功！ password email 数据库guruquan
   </body>
 </html>

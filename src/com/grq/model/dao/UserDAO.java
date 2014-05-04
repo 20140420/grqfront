@@ -2,12 +2,11 @@ package com.grq.model.dao;
 
 import java.util.List;
 
-//import com.grq.model.bean.User;
-import com.bean.User;
+import com.grq.model.bean.User;
 
 /**
  * 用户接口
- * @author JiangQuan
+ * @author JiangQuan 
  */
 public interface UserDAO {
 	/**

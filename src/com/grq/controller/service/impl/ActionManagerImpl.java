@@ -3,8 +3,8 @@ package com.grq.controller.service.impl;
 
 import com.grq.controller.service.ActionManager;
 //import com.grq.model.bean.User;
-import com.bean.User;
-import com.grq.model.dao.UserDAO;
+import com.grq.model.bean.User;
+import com.grq.model.dao.UserDAO; 
 
 /**
  * 业务逻辑层接口实现类
@@ -33,8 +33,8 @@ public class ActionManagerImpl implements ActionManager {
 			User user = userDAO.findUserByEmailAndPass(email, password);
 			if (user != null)
 			{
-				//return user.getUserId();
-				return user.getId();
+				return user.getUserId();
+				//return user.getId();
 			}else {
 				System.out.println("cann't null，这里是ActionManagerImpl文件");
 			}

@@ -21,6 +21,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <div class="container">
 	<div class="header"><!--start .header --><%@ include file="header.jsp" %> <!--end .header --></div>
 	<div class="content">
+	<!-- shark按键向导 -->
+	<s:url action="indexMenu_shark" namespace="/pages"	var="indexMenu_shark"></s:url>
+	<!-- snake按键向导 -->
+	<s:url action="indexMenu_snake" namespace="/pages" var="indexMenu_snake"></s:url>
       <div class="index">
       		<!-- 
             <div class="content-welcome">
@@ -31,8 +35,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</div><!---->
 			<div class="menu-control">
                 <ul>
-                <li><a href="shark/shark.jsp" target="_blank">金鲨银鲨</a></li>
-                <li><a href="snake/snake.jsp" target="_blank">小蛇快逃</a></li>
+                <li><a href="${indexMenu_shark}" target="_blank">金鲨银鲨</a></li>
+                <li><a href="${indexMenu_snake}" target="_blank">小蛇快逃</a></li>
                 <li><a href="investments.jsp" target="_blank">投资理财</a></li>
                 <li><a href="charts.html" target="_blank">实时价格</a></li>
                 <li><a href="plans.jsp" target="_blank">网络电视</a></li>                

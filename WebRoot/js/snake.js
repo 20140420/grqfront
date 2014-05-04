@@ -36,13 +36,13 @@
                         case 37:
                             if (Game.direction != 'east'){ Game.setDirection('west');
 							}else{
-                                Console.log('Error:不能倒走！');
+                                Console.log('Error:cannt back!');
                             }
                             break;
                         case 38:
                             if (Game.direction != 'south'){ Game.setDirection('north');
 							}else{
-                                Console.log('Error:不能倒走！');
+                                Console.log('Error:cannt back!');
                             }
                             break;
                         case 39:

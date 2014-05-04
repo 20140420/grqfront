@@ -2,7 +2,7 @@ package com.grq.model;
 
 import java.util.ArrayList;
 import java.util.List;
-
+ 
 /**
  * 性别枚举类
  * @author Jiang Quan

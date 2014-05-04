@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Struts2Diagram version="2.0">
-  <include file="struts-front.xml" location="105,70" size="131,31" />
-  <include file="struts-back.xml" location="109,133" size="131,27" />
-  <include file="struts-default.xml" location="110,197" size="127,28" />
+  <include file="struts-default.xml" location="96,44" size="150,30" />
+  <include file="struts-front.xml" location="97,119" size="150,30" />
+  <include file="struts-back.xml" location="93,189" size="150,30" />
 </Struts2Diagram>
 

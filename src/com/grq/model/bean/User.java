@@ -2,31 +2,20 @@ package com.grq.model.bean;
 // default package
 
 
-import java.util.HashSet;
-import java.util.Set;
-
 
 /**
  * User entity. @author MyEclipse Persistence Tools
+ * 只获取了数据库里的几个字段,user_id\email\password
  */
 
 public class User  implements java.io.Serializable {
 
 
-    /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	// Fields    
+    // Fields    
 
-     private Integer userId;
-     private Employee employee;
-     private Asset asset;
-     private UOnline UOnline;
-     private Player player;
-     private String email;
-     private String password;
-     private Set assets = new HashSet(0);
+	private Integer userId;
+    private String email;
+    private String password;
 
 
     // Constructors
@@ -36,68 +25,27 @@ public class User  implements java.io.Serializable {
     }
 
 	/** minimal constructor */
-    public User(Employee employee, Asset asset, UOnline UOnline, Player player, String email, String password) {
-        this.employee = employee;
-        this.asset = asset;
-        this.UOnline = UOnline;
-        this.player = player;
-        this.email = email;
-        this.password = password;
+    public User(String username) {
+        this.email = username;
     }
     
     /** full constructor */
-    public User(Employee employee, Asset asset, UOnline UOnline, Player player, String email, String password, Set assets) {
-        this.employee = employee;
-        this.asset = asset;
-        this.UOnline = UOnline;
-        this.player = player;
+    public User(String email, String password) {
         this.email = email;
         this.password = password;
-        this.assets = assets;
     }
 
    
     // Property accessors
 
-    public Integer getUserId() {
-        return this.userId;
-    }
-    
-    public void setUserId(Integer userId) {
-        this.userId = userId;
-    }
 
-    public Employee getEmployee() {
-        return this.employee;
-    }
-    
-    public void setEmployee(Employee employee) {
-        this.employee = employee;
-    }
+	public Integer getUserId() {
+		return userId;
+	}
 
-    public Asset getAsset() {
-        return this.asset;
-    }
-    
-    public void setAsset(Asset asset) {
-        this.asset = asset;
-    }
-
-    public UOnline getUOnline() {
-        return this.UOnline;
-    }
-    
-    public void setUOnline(UOnline UOnline) {
-        this.UOnline = UOnline;
-    }
-
-    public Player getPlayer() {
-        return this.player;
-    }
-    
-    public void setPlayer(Player player) {
-        this.player = player;
-    }
+	public void setUserId(Integer userId) {
+		this.userId = userId;
+	}
 
     public String getEmail() {
         return this.email;
@@ -114,21 +62,5 @@ public class User  implements java.io.Serializable {
     public void setPassword(String password) {
         this.password = password;
     }
-
-    public Set getAssets() {
-        return this.assets;
-    }
-    
-    public void setAssets(Set assets) {
-        this.assets = assets;
-    }
-   
-
-
-
-
-
-
-
 
 }

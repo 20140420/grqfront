@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="grq-front" location="18,139" size="280,140">
+    <action name="index" location="73,65" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="grq-login" location="15,-43" size="280,140">
+    <action name="login" location="73,65" size="150,41">
+      <result name="login_user">
+        <resourceEdge source="login_user" routing="0" target="Success.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="grq-index" location="22,326" size="280,148">
+    <action name="indexMenu_*" location="18,26" size="150,62">
+      <result name="shark">
+        <resourceEdge source="shark" routing="0" target="shark.jsp" />
+      </result>
+      <result name="snake">
+        <resourceEdge source="snake" routing="0" target="snake.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="index.jsp" path="/WEB-INF/pages/index.jsp" location="376,181" size="150,55" />
+  <webResource name="Success.jsp" path="/WEB-INF/pages/Success.jsp" location="375,26" size="150,55" />
+  <webResource name="shark.jsp" path="/WEB-INF/pages/shark/shark.jsp" location="387,306" size="150,55" />
+  <webResource name="snake.jsp" path="/WEB-INF/pages/snake/snake.jsp" location="386,381" size="150,55" />
+  <extendsEdge source="grq-login" target="grq-front" routing="0" />
+  <extendsEdge source="grq-index" target="grq-front" routing="0" />
+</Struts2Diagram>
+

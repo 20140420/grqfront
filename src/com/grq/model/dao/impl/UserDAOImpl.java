@@ -4,7 +4,7 @@ import java.util.List;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
 //import com.grq.model.bean.User;
-import com.bean.User;
+import com.grq.model.bean.User;
 import com.grq.model.dao.UserDAO;
 
 public class UserDAOImpl extends HibernateDaoSupport implements UserDAO {
@@ -15,7 +15,7 @@ public class UserDAOImpl extends HibernateDaoSupport implements UserDAO {
 		return (User)getHibernateTemplate().get(User.class, id);
 	}
 
-	@Override
+	@Override 
 	public void save(User user) {
 		// TODO Auto-generated method stub
 		getHibernateTemplate().save(user);
@@ -53,7 +53,7 @@ public class UserDAOImpl extends HibernateDaoSupport implements UserDAO {
 		//delete(2)£»
 		//String() args=(username,password);
 		System.out.println("³É¹¦É¾³ý");
-		List ul =getHibernateTemplate().find("from com.bean.User au where au.email = '"+email+"'and au.password = '"+password+"'");
+		List ul =getHibernateTemplate().find("from com.grq.model.bean.User au where au.email = '"+email+"'and au.password = '"+password+"'");
 		
 		if(ul.size()==1)
 		{

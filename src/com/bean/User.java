@@ -13,7 +13,6 @@ public class User  implements java.io.Serializable {
     // Fields    
 
      private Integer id;
-     private String username;
      private String email;
      private String password;
 
@@ -25,15 +24,13 @@ public class User  implements java.io.Serializable {
     }
 
 	/** minimal constructor */
-    public User(String username, String email) {
-        this.username = username;
-        this.email = email;
+    public User(String username) {
+        this.email = username;
     }
     
     /** full constructor */
-    public User(String username, String email, String password) {
-        this.username = username;
-        this.email = email;
+    public User(String username, String password) {
+        this.email = username;
         this.password = password;
     }
 
@@ -48,20 +45,12 @@ public class User  implements java.io.Serializable {
         this.id = id;
     }
 
-    public String getUsername() {
-        return this.username;
-    }
-    
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
     public String getEmail() {
         return this.email;
     }
     
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmail(String username) {
+        this.email = username;
     }
 
     public String getPassword() {

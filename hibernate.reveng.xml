@@ -36,5 +36,4 @@
 	<table name="tb_security" catalog="guruquan" class="Security"></table>
 	<table name="tb_system" catalog="guruquan" class="System"></table>
 	<table name="tb_u_online" catalog="guruquan" class="UOnline"></table>
-	<table name="test" catalog="mytest" class="User"></table>
 </hibernate-reverse-engineering>

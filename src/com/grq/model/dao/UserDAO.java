@@ -20,13 +20,13 @@ public interface UserDAO {
 	 * 增加用户
 	 * @param user 需要增加的用户
 	 */
-	void save(User1 user);
+	void save(User user);
 	
 	/**
 	 * 修改用户
 	 * @param user 需要修改的用户
 	 */
-	void update(User1 user);
+	void update(User user);
 	
 	/**
 	 * 删除用户
@@ -38,13 +38,13 @@ public interface UserDAO {
 	 * 删除用户
 	 * @param user 需要删除的用户
 	 */
-	void delete(User1 user);
+	void delete(User user);
 	
 	/**
 	 * 查询全部用户
 	 * @return 获得全部用户
 	 */
-	List<User1> findAll();
+	List<User> findAll();
 	
 	/**
 	 * 根据邮箱、密码查找用户
@@ -52,6 +52,6 @@ public interface UserDAO {
 	 * @param password 查询所需的密码
 	 * @return 对应的用户
 	 */
-	User1 findUserByEmailAndPass(String email,String password);
+	User findUserByEmailAndPass(String email,String password);
 
 }

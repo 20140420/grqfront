@@ -1,7 +1,10 @@
 <%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
+<%@ taglib prefix="s" uri="/struts-tags"%>
+<s:set var="context_path"
+	value="#request.get('javax.servlet.forward.context_path')"></s:set>
 <!DOCTYPE html>
-<link href="../../../css/game.css" rel="stylesheet" type="text/css" />
-<script type="application/javascript" src="../../../js/chat.js"></script>
+<link href="${context_path}/css/game.css" rel="stylesheet" type="text/css" />
+<script type="application/javascript" src="${context_path}/js/chat.js"></script>
 <div class="sidebar1">
 	<ul class="nav">
       <li>

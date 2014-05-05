@@ -9,7 +9,7 @@
 		</action>
 	</package>	
 	<!-- 会员登入 -->
-	<package name="grq-login" extends="grq-front" namespace="/">
+	<package name="grq-login" namespace="/" extends="grq-front">
 		<action name="login" class="springLoginAction">
 			<result name="login_user">/WEB-INF/pages/Success.jsp</result>
 		</action>
@@ -20,5 +20,13 @@
 			<result name="shark">/WEB-INF/pages/shark/shark.jsp</result>
 			<result name="snake">/WEB-INF/pages/snake/snake.jsp</result>
 		</action>	
-    </package>	
+    </package>
+	<!-- shrak页面 -->
+	<package name="grq-shark" namespace="/pages/shark" extends="grq-front">
+		<action name="shark_*" class="sharkAction" method="{1}">
+			<result name="chattool">/WEB-INF/pages/chat/chattool.jsp</result>
+			<result name="gdial">/WEB-INF/pages/shark/gdial.jsp</result>
+			<result name="gpanel">/WEB-INF/pages/shark/gpanel.jsp</result>
+		</action>
+	</package>
 </struts>    

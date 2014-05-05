@@ -18,9 +18,12 @@
 	<bean id="springLoginAction" class="com.grq.controller.action.LoginAction">
 		<property name="mgr" ref="mgr"></property>
 	</bean>	
-
+	<!-- 主页菜单按键向导Action类 -->
 	<bean id="indexMenuAction" class="com.grq.controller.action.IndexMenuAction">
 	</bean>	
+	<!-- shark主页面Action类 -->
+	<bean id="sharkAction" class="com.grq.controller.action.SharkAction">
+	</bean>
 	
 
 	<!-- 添加hibernate文件支持，用hibernate.cfg.xml链接数据库 -->

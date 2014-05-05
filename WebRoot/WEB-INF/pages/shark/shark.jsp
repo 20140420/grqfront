@@ -1,11 +1,14 @@
 <%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
+<%@ taglib prefix="s" uri="/struts-tags"%>
+<s:set var="context_path"
+	value="#request.get('javax.servlet.forward.context_path')"></s:set>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>金鲨银鲨</title>
-<link href="../../../css/game.css" rel="stylesheet" type="text/css" />
-<script src="../../../js/jquery.js"></script>
+<link href="${context_path}/css/game.css" rel="stylesheet" type="text/css" />
+<script src="${context_path}/js/jquery.js"></script>
 </head>
 <body>
 <div class="noscript">
@@ -17,21 +20,24 @@
 	</ul>
 	<%@ include file="gheader.jsp"%> 
   <!-- end .header --></div>
+  <!-- left-chat -->
   <div class="sidebar1">
-	<%@ include file="../chat/chattool.jsp"%>
+  	<s:action name="shark_chattool" namespace="/pages/shark" executeResult="true"></s:action>
     <!-- end .sidebar1 --></div>
+    
   <div class="content">
   	<div class="content-gdial">
-    <%@ include file="gdial.jsp"%>
-    </div>    
+  	<s:action name="shark_gdial" namespace="/pages/shark" executeResult="true"></s:action>
+    </div>  
+      
     <div class="content-gpanel">
-    <%@ include file="gpanel.jsp"%>
+    <s:action name="shark_gpanel" namespace="/pages/shark" executeResult="true"></s:action>
     </div>
   <!-- end .content --></div>
   <!--<div class="footer">
     <p>此 .footer 包含声明 position:relative，以便为 .footer 指定 Internet Explorer 6 hasLayout，并使其以正确方式清除。如果您不需要支持 IE6，则可以将其删除。</p>
   <!-- end .footer </div>-->
 <!-- end .container --></div>
-<script src="../../../js/shark.js"></script>
+<script src="${context_path}/js/shark.js"></script>
 </body>
 </html>

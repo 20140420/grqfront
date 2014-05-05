@@ -1087,7 +1087,7 @@ table td,th{
 	height: 76px;
 	width: 280px;
 	border: 0px solid #1491BF;
-	background-image: url(../imgsystem/online.jpg);
+	background-image: url(../imgsystem/profile.jpg);
 	background-repeat: no-repeat;
 }
 .profile input {
@@ -1097,7 +1097,8 @@ table td,th{
 	padding: 0px;
 	border: 0px solid #1491BF;
 	font-size: 12px;
-	background-color: #BFDCEA;
+	background-color: #1491BF;
+	color: #FFF;
 }
 .profile .profile-face {
 	margin: 14px 0px 0px 26px;
@@ -1116,7 +1117,7 @@ table td,th{
 	border: 0px solid #1491BF;
 	font-size: 14px;
 	font-family: "黑体";
-	color: #000;
+	color: #FFF;
 	font-weight: bold;
 }
 .profile .profile-nickname {
@@ -1136,7 +1137,7 @@ table td,th{
 	position: absolute;
 	font-size: 14px;
 	font-family: "黑体";
-	color: #000;
+	color: #FFF;
 	font-weight: bold;
 }
 .profile .profile-apprentice_number {
@@ -1156,7 +1157,7 @@ table td,th{
 	position: absolute;
 	font-size: 14px;
 	font-family: "黑体";
-	color: #000;
+	color: #FFF;
 	font-weight: bold;
 }
 .profile .profile-silver_available {

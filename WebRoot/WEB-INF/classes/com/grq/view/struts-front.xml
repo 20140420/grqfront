@@ -22,11 +22,23 @@
 		</action>	
     </package>
 	<!-- shrak页面 -->
-	<package name="grq-shark" namespace="/pages/shark" extends="grq-front">
+	<package name="grq-shark" namespace="/pages" extends="grq-front">
 		<action name="shark_*" class="sharkAction" method="{1}">
+			<result name="gheader">/WEB-INF/pages/shark/gheader.jsp</result>
 			<result name="chattool">/WEB-INF/pages/chat/chattool.jsp</result>
 			<result name="gdial">/WEB-INF/pages/shark/gdial.jsp</result>
 			<result name="gpanel">/WEB-INF/pages/shark/gpanel.jsp</result>
 		</action>
 	</package>
+	<!-- shrak页面的headerMenu -->
+	<package name="grq-headerMenu" namespace="/pages" extends="grq-shark">
+		<action name="headerMenu_*" class="sharkAction" method="{1}">
+			<result name="uinquiryaccount">/WEB-INF/pages/manage/uinquiryaccount.jsp</result>
+			<result name="usilverbuy">/WEB-INF/pages/manage/usilverbuy.jsp</result>
+			<result name="usilversell">/WEB-INF/pages/manage/usilversell.jsp</result>
+			<result name="grule">/WEB-INF/pages/shark/grule.jsp</result>
+		</action>
+	</package>
+	
+	
 </struts>    

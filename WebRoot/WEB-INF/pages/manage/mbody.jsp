@@ -1,12 +1,14 @@
 <%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
+<%@ taglib prefix="s" uri="/struts-tags"%>
+<s:set var="context_path" value="#request.get('javax.servlet.forward.context_path')"></s:set>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>股如泉网上交易系统</title>
-<link href="../../../css/manage.css" rel="stylesheet" type="text/css" />
-<script src="../../../js/jquery.js"></script>
-<script src="../../../js/manage.js"></script>
+<link href="${context_path}/css/manage.css" rel="stylesheet" type="text/css" />
+<script src="${context_path}/js/jquery.js"></script>
+<script src="${context_path}/js/manage.js"></script>
 </head>
 <body>
 <div class="container">

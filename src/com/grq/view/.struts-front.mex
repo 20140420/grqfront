@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Struts2Diagram version="2.0">
-  <package name="grq-front" location="18,139" size="280,140">
-    <action name="index" location="73,65" size="150,41">
+  <package name="grq-front" location="232,192" size="280,140">
+    <action name="index" location="63,69" size="150,41">
       <result name="success">
         <resourceEdge source="success" routing="0" target="index.jsp" />
       </result>
     </action>
   </package>
-  <package name="grq-login" location="15,-43" size="280,140">
-    <action name="login" location="73,65" size="150,41">
+  <package name="grq-login" location="229,10" size="280,140">
+    <action name="login" location="94,86" size="150,41">
       <result name="login_user">
         <resourceEdge source="login_user" routing="0" target="Success.jsp" />
       </result>
     </action>
   </package>
-  <package name="grq-index" location="22,326" size="280,148">
-    <action name="indexMenu_*" location="18,26" size="150,62">
+  <package name="grq-index" location="236,379" size="280,148">
+    <action name="indexMenu_*" location="39,47" size="150,62">
       <result name="shark">
         <resourceEdge source="shark" routing="0" target="shark.jsp" />
       </result>
@@ -24,11 +24,52 @@
       </result>
     </action>
   </package>
-  <webResource name="index.jsp" path="/WEB-INF/pages/index.jsp" location="376,181" size="150,55" />
-  <webResource name="Success.jsp" path="/WEB-INF/pages/Success.jsp" location="375,26" size="150,55" />
-  <webResource name="shark.jsp" path="/WEB-INF/pages/shark/shark.jsp" location="387,306" size="150,55" />
-  <webResource name="snake.jsp" path="/WEB-INF/pages/snake/snake.jsp" location="386,381" size="150,55" />
+  <package name="grq-shark" location="630,173" size="223,175">
+    <action name="shark_*" location="49,52" size="150,104">
+      <result name="chattool">
+        <resourceEdge source="chattool" routing="0" target="chattool.jsp" />
+      </result>
+      <result name="gdial">
+        <resourceEdge source="gdial" routing="0" target="gdial.jsp" />
+      </result>
+      <result name="gpanel">
+        <resourceEdge source="gpanel" routing="0" target="gpanel.jsp" />
+      </result>
+      <result name="gheader">
+        <resourceEdge source="gheader" routing="0" target="gheader.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="index.jsp" path="/WEB-INF/pages/index.jsp" location="42,261" size="150,55" />
+  <webResource name="Success.jsp" path="/WEB-INF/pages/Success.jsp" location="614,69" size="150,55" />
+  <webResource name="shark.jsp" path="/WEB-INF/pages/shark/shark.jsp" location="10,400" size="150,55" />
+  <webResource name="snake.jsp" path="/WEB-INF/pages/snake/snake.jsp" location="11,472" size="150,55" />
+  <webResource name="chattool.jsp" path="/WEB-INF/pages/chat/chattool.jsp" location="1035,137" size="150,55" />
+  <webResource name="gdial.jsp" path="/WEB-INF/pages/shark/gdial.jsp" location="1035,208" size="150,55" />
+  <webResource name="gpanel.jsp" path="/WEB-INF/pages/shark/gpanel.jsp" location="1036,287" size="150,55" />
+  <webResource name="gheader.jsp" path="/WEB-INF/pages/shark/gheader.jsp" location="1038,360" size="150,55" />
+  <package name="grq-headerMenu" location="651,454" size="174,136">
+    <action name="headerMenu_*" location="17,25" size="150,104">
+      <result name="uinquiryaccount">
+        <resourceEdge source="uinquiryaccount" routing="0" target="uinquiryaccount.jsp" />
+      </result>
+      <result name="usilverbuy">
+        <resourceEdge source="usilverbuy" routing="0" target="usilverbuy.jsp" />
+      </result>
+      <result name="usilversell">
+        <resourceEdge source="usilversell" routing="0" target="usilversell.jsp" />
+      </result>
+      <result name="grule">
+        <resourceEdge source="grule" routing="0" target="grule.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="uinquiryaccount.jsp" path="/WEB-INF/pages/manage/uinquiryaccount.jsp" location="1029,436" size="150,55" />
+  <webResource name="usilverbuy.jsp" path="/WEB-INF/pages/manage/usilverbuy.jsp" location="1029,497" size="150,55" />
+  <webResource name="usilversell.jsp" path="/WEB-INF/pages/manage/usilversell.jsp" location="1030,561" size="150,55" />
+  <webResource name="grule.jsp" path="/WEB-INF/pages/shark/grule.jsp" location="1036,624" size="150,55" />
   <extendsEdge source="grq-login" target="grq-front" routing="0" />
   <extendsEdge source="grq-index" target="grq-front" routing="0" />
+  <extendsEdge source="grq-shark" target="grq-front" routing="0" />
 </Struts2Diagram>
 

@@ -4,8 +4,11 @@ String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
 <%@ taglib prefix="s" uri="/struts-tags"%>
-<s:set var="context_path"
-	value="#request.get('javax.servlet.forward.context_path')"></s:set>
+<s:set var="context_path" value="#request.get('javax.servlet.forward.context_path')"></s:set>
+<!-- shark按键向导 -->
+<s:url action="indexMenu_shark" namespace="/pages"	var="indexMenu_shark"></s:url>
+<!-- snake按键向导 -->
+<s:url action="indexMenu_snake" namespace="/pages" var="indexMenu_snake"></s:url>
 <!doctype html>
 <html>
 <head>
@@ -21,10 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <div class="container">
 	<div class="header"><!--start .header --><%@ include file="header.jsp" %> <!--end .header --></div>
 	<div class="content">
-	<!-- shark按键向导 -->
-	<s:url action="indexMenu_shark" namespace="/pages"	var="indexMenu_shark"></s:url>
-	<!-- snake按键向导 -->
-	<s:url action="indexMenu_snake" namespace="/pages" var="indexMenu_snake"></s:url>
+
       <div class="index">
       		<!-- 
             <div class="content-welcome">

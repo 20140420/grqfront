@@ -1,10 +1,13 @@
 <%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
+<%@ taglib prefix="s" uri="/struts-tags"%>
+
+<s:set var="context_path" value="#request.get('javax.servlet.forward.context_path')"></s:set>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>金鲨银鲨游戏规则</title>
-<link href="../css/game.css" rel="stylesheet" type="text/css" />
+<link href="${context_path}/css/game.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div class="container">
@@ -12,10 +15,10 @@
 	<ul class="header-title">
         <li>金鲨银鲨游戏规则</li>
 	</ul>
-	<%@ include file="gheader.jsp"%> 
+	<s:action name="shark_gheader" namespace="/pages" executeResult="true"></s:action> 
   <!-- end .header --></div>
   <div class="sidebar1">      
-	<%@ include file="../chat/chattool.jsp"%>   
+	<s:action name="shark_chattool" namespace="/pages" executeResult="true"></s:action>  
     <!-- end .sidebar1 --></div>
   <div class="content">
 <div class="grule">
@@ -105,7 +108,7 @@
     <!-- end .content --></div>
   <!--<div class="footer">
     <p>此 .footer 包含声明 position:relative，以便为 .footer 指定 Internet Explorer 6 hasLayout，并使其以正确方式清除。如果您不需要支持 IE6，则可以将其删除。</p>
-  <!-- end .footer --></div>
+  </div> end .footer -->
 <!-- end .container --></div>
 </body>
 </html>

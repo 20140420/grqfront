@@ -1,7 +1,6 @@
 <%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
 <%@ taglib prefix="s" uri="/struts-tags"%>
-<s:set var="context_path"
-	value="#request.get('javax.servlet.forward.context_path')"></s:set>
+<s:set var="context_path" value="#request.get('javax.servlet.forward.context_path')"></s:set>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,20 +17,20 @@
 	<ul class="header-title">
         <li>【金鲨银鲨-第一桌】</li>
 	</ul>
-	<%@ include file="gheader.jsp"%> 
+	<s:action name="shark_gheader" namespace="/pages" executeResult="true"></s:action>
   <!-- end .header --></div>
   <!-- left-chat -->
   <div class="sidebar1">
-  	<s:action name="shark_chattool" namespace="/pages/shark" executeResult="true"></s:action>
+  	<s:action name="shark_chattool" namespace="/pages" executeResult="true"></s:action>
     <!-- end .sidebar1 --></div>
     
   <div class="content">
   	<div class="content-gdial">
-  	<s:action name="shark_gdial" namespace="/pages/shark" executeResult="true"></s:action>
+  	<s:action name="shark_gdial" namespace="/pages" executeResult="true"></s:action>
     </div>  
       
     <div class="content-gpanel">
-    <s:action name="shark_gpanel" namespace="/pages/shark" executeResult="true"></s:action>
+    <s:action name="shark_gpanel" namespace="/pages" executeResult="true"></s:action>
     </div>
   <!-- end .content --></div>
   <!--<div class="footer">

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="grq-back" location="10,108" size="280,210">
+    <action name="manage_*" location="69,75" size="150,62">
+      <result name="mbody">
+        <resourceEdge source="mbody" routing="0" target="mbody.jsp" />
+      </result>
+      <result name="mfooter">
+        <resourceEdge source="mfooter" routing="0" target="mfooter.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="mbody.jsp" path="/WEB-INF/pages/manage/mbody.jsp" location="371,122" size="150,55" />
+  <webResource name="mfooter.jsp" path="/WEB-INF/pages/manage/mfooter.jsp" location="373,224" size="150,55" />
+</Struts2Diagram>
+

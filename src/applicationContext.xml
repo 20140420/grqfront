@@ -24,6 +24,9 @@
 	<!-- shark主页面Action类 -->
 	<bean id="sharkAction" class="com.grq.controller.action.SharkAction">
 	</bean>
+	<!-- 后台页面Action类 -->
+	<bean id="manageAction" class="com.grq.controller.action.ManageAction">
+	</bean>
 	
 
 	<!-- 添加hibernate文件支持，用hibernate.cfg.xml链接数据库 -->

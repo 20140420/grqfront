@@ -15,8 +15,9 @@
 *    v1.00  2013/11/29 姜泉  首版制作    
 * --------------------------------->
 <%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
+
 <!--<div class="sidebar1">-->
-		<h3><a href="../index.jsp">首页</a></h3>
+		<h3><a href="index">首页</a></h3>
         <h3><a href="usilverbuy.jsp">银币买入</a></h3>
 		<h3><a href="usilversell.jsp">银币卖出</a></h3>
 		<h3>查询</h3>

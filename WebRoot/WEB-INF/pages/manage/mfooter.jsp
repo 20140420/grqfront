@@ -15,7 +15,6 @@
 *    v1.00  2013/11/27 姜泉  首版制作    
 * ---------------------------------->
 <%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
-
   <div class="footer">
       <ul>
         <li></li>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Struts2Diagram version="2.0">
   <package name="grq-back" location="10,108" size="280,210">
-    <action name="manage_*" location="69,75" size="150,62">
+    <action name="manage_*" location="89,95" size="150,62">
       <result name="mbody">
         <resourceEdge source="mbody" routing="0" target="mbody.jsp" />
       </result>
@@ -10,7 +10,37 @@
       </result>
     </action>
   </package>
-  <webResource name="mbody.jsp" path="/WEB-INF/pages/manage/mbody.jsp" location="371,122" size="150,55" />
-  <webResource name="mfooter.jsp" path="/WEB-INF/pages/manage/mfooter.jsp" location="373,224" size="150,55" />
+  <webResource name="mbody.jsp" path="/WEB-INF/pages/manage/mbody.jsp" location="380,163" size="150,55" />
+  <webResource name="mfooter.jsp" path="/WEB-INF/pages/manage/mfooter.jsp" location="379,243" size="150,55" />
+  <package name="grq-back" location="10,108" size="280,210">
+    <action name="manage_*" location="88,94" size="150,62">
+      <result name="mbody" />
+      <result name="mfooter" />
+    </action>
+  </package>
+  <package name="grq-sidebar" location="50,350" size="186,102">
+    <action name="sidebar_*" location="20,28" size="150,62">
+      <result name="usidebar">
+        <resourceEdge source="usidebar" routing="0" target="usidebar.jsp" />
+      </result>
+      <result name="msidebar">
+        <resourceEdge source="msidebar" routing="0" target="msidebar.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="usidebar.jsp" path="/WEB-INF/pages/manage/usidebar.jsp" location="350,350" size="150,55" />
+  <webResource name="msidebar.jsp" path="/WEB-INF/pages/manage/msidebar.jsp" location="350,419" size="150,55" />
+  <package name="grq-usidebar" location="50,500" size="172,92">
+    <action name="usidebar_*" location="16,24" size="150,62">
+      <result name="usilverbuy">
+        <resourceEdge source="usilverbuy" routing="0" target="usilverbuy.jsp" />
+      </result>
+      <result name="usilversell">
+        <resourceEdge source="usilversell" routing="0" target="usilversell.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="usilverbuy.jsp" path="/WEB-INF/pages/manage/usilverbuy.jsp" location="350,500" size="150,55" />
+  <webResource name="usilversell.jsp" path="/WEB-INF/pages/manage/usilversell.jsp" location="348,563" size="150,55" />
 </Struts2Diagram>
 

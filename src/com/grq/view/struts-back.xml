@@ -9,5 +9,20 @@
 		</action>
 	</package>
 	
+	<!-- 后台栏目类别管理 -->
+	<package name="grq-sidebar" namespace="/pages" extends="grq-back">
+		<action name="sidebar_*" class="manageAction" method="{1}">
+            <result name="usidebar">/WEB-INF/pages/manage/usidebar.jsp</result>
+            <result name="msidebar">/WEB-INF/pages/manage/msidebar.jsp</result>
+		</action>
+	</package>
+	
+	<!-- 后台普通用户栏目管理 -->
+	<package name="grq-usidebar" namespace="/pages" extends="grq-sidebar">
+		<action name="usidebar_*" class="manageAction" method="{1}">
+            <result name="usilverbuy">/WEB-INF/pages/manage/usilverbuy.jsp</result>
+            <result name="usilversell">/WEB-INF/pages/manage/usilversell.jsp</result>
+		</action>
+	</package>
 	
 </struts>    

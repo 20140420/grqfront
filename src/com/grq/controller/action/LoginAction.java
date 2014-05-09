@@ -25,7 +25,7 @@ public class LoginAction extends ActionSupport {
 		Integer userId =mgr.validLogin(email, password);
 		if(userId != null){
 			System.out.println("合法用户");
-			return "login_user";
+			return "login_user";//这里设计
 		} else {
 			addActionError("邮箱/密码不匹配");
 			System.out.println("非法用户， 这里是LoginAction文件");

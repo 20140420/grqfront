@@ -18,35 +18,47 @@
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <s:url action="usidebar_usilverbuy" namespace="/pages"	var="usidebar_usilverbuy"></s:url>
 <s:url action="usidebar_usilversell" namespace="/pages"	var="usidebar_usilversell"></s:url>
+<s:url action="usidebar_uinquiryaccount" namespace="/pages"	var="usidebar_uinquiryaccount"></s:url>
+<s:url action="usidebar_uinquirysilverrecord" namespace="/pages"	var="usidebar_uinquirysilverrecord"></s:url>
+<s:url action="usidebar_uinquirygame" namespace="/pages"	var="usidebar_uinquirygame"></s:url>
+<s:url action="usidebar_uinvest" namespace="/pages"	var="usidebar_uinvest"></s:url>
+<s:url action="usidebar_uinvestrecord" namespace="/pages"	var="usidebar_uinvestrecord"></s:url>
+<s:url action="usidebar_ugiro" namespace="/pages"	var="usidebar_ugiro"></s:url>
+<s:url action="usidebar_ugirorecord" namespace="/pages"	var="usidebar_ugirorecord"></s:url>
+<s:url action="usidebar_uprofile" namespace="/pages"	var="usidebar_uprofile"></s:url>
+<s:url action="usidebar_upassquestion" namespace="/pages"	var="usidebar_upassquestion"></s:url>
+<s:url action="usidebar_ubankcard" namespace="/pages"	var="usidebar_ubankcard"></s:url>
+<s:url action="usidebar_umaster" namespace="/pages"	var="usidebar_umaster"></s:url>
+<s:url action="usidebar_uapprentice" namespace="/pages"	var="usidebar_uapprentice"></s:url>
 <!--<div class="sidebar1">-->
 		<h3><a href="index">首页</a></h3>
         <h3><a target="mdetail" href="${usidebar_usilverbuy}">银币买入</a></h3>
 		<h3><a target="mdetail" href="${usidebar_usilversell}">银币卖出</a></h3>
 		<h3>查询</h3>
 		<ul>
-			<li><a target="mdetail" href="uinquiryaccount.jsp">账户资金</a></li>
-			<li><a target="mdetail" href="uinquirysilverrecord.jsp">资金明细</a></li>
-			<li><a target="mdetail" href="uinquirygame.jsp">当日游戏</a></li>
+			<li><a target="mdetail" href="${usidebar_uinquiryaccount}">账户资金</a></li>
+			<li><a target="mdetail" href="${usidebar_uinquirysilverrecord}">资金明细</a></li>
+			<li><a target="mdetail" href="${usidebar_uinquirygame}">当日游戏</a></li>
 		</ul>
 		<h3>投资理财</h3>
 		<ul>
-			<li><a target="mdetail" href="uinvest.jsp">固定收益投资</a></li>
-            <li><a target="mdetail" href="uinvestrecord.jsp">投资明细</a></li>
+			<li><a target="mdetail" href="${usidebar_uinvest}">固定收益投资</a></li>
+            <li><a target="mdetail" href="${usidebar_uinvestrecord}">投资明细</a></li>
 		</ul>        
   		<h3>转账</h3>
 		<ul>
-			<li><a target="mdetail" href="ugiro.jsp">转入转出</a></li>
-			<li><a target="mdetail" href="ugirorecord.jsp">转账记录</a></li>
+			<li><a target="mdetail" href="${usidebar_ugiro}">转入转出</a></li>
+			<li><a target="mdetail" href="${usidebar_ugirorecord}">转账记录</a></li>
 		</ul>
 	    <h3>个人账户</h3>
 		<ul>
-            <li><a target="mdetail" href="uprofile.jsp">个人资料</a></li>
-			<li><a target="mdetail" href="upassquestion.jsp">账户密保</a></li>
-			<li><a target="mdetail" href="ubankcard.jsp">关联银行</a></li>      
+            <li><a target="mdetail" href="${usidebar_uprofile}">个人资料</a></li>
+			<li><a target="mdetail" href="${usidebar_upassquestion}">账户密保</a></li>
+			<li><a target="mdetail" href="${usidebar_ubankcard}">关联银行</a></li>      
 		</ul>		
   		<h3>师徒关系</h3>
 		<ul class="hide">
-			<li><a target="mdetail" href="umaster.jsp">师傅</a></li>
-			<li><a target="mdetail" href="uapprentice.jsp">徒弟</a></li>
+			<li><a target="mdetail" href="${usidebar_umaster}">师傅</a></li>
+			<li><a target="mdetail" href="${usidebar_uapprentice}">徒弟</a></li>
 		</ul>
 <!--</div> -->

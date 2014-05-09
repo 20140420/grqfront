@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Struts2Diagram version="2.0">
-  <package name="grq-back" location="10,108" size="280,210">
-    <action name="manage_*" location="89,95" size="150,62">
+  <package name="grq-back" location="966,78" size="251,203">
+    <action name="manage_*" location="51,80" size="150,83">
+      <result name="manage">
+        <resourceEdge source="manage" routing="0" target="manage.jsp" />
+      </result>
       <result name="mbody">
         <resourceEdge source="mbody" routing="0" target="mbody.jsp" />
       </result>
@@ -10,16 +13,8 @@
       </result>
     </action>
   </package>
-  <webResource name="mbody.jsp" path="/WEB-INF/pages/manage/mbody.jsp" location="380,163" size="150,55" />
-  <webResource name="mfooter.jsp" path="/WEB-INF/pages/manage/mfooter.jsp" location="379,243" size="150,55" />
-  <package name="grq-back" location="10,108" size="280,210">
-    <action name="manage_*" location="88,94" size="150,62">
-      <result name="mbody" />
-      <result name="mfooter" />
-    </action>
-  </package>
-  <package name="grq-sidebar" location="50,350" size="186,102">
-    <action name="sidebar_*" location="20,28" size="150,62">
+  <package name="grq-sidebar" location="974,391" size="237,142">
+    <action name="sidebar_*" location="50,40" size="150,62">
       <result name="usidebar">
         <resourceEdge source="usidebar" routing="0" target="usidebar.jsp" />
       </result>
@@ -28,19 +23,117 @@
       </result>
     </action>
   </package>
-  <webResource name="usidebar.jsp" path="/WEB-INF/pages/manage/usidebar.jsp" location="350,350" size="150,55" />
-  <webResource name="msidebar.jsp" path="/WEB-INF/pages/manage/msidebar.jsp" location="350,419" size="150,55" />
-  <package name="grq-usidebar" location="50,500" size="172,92">
-    <action name="usidebar_*" location="16,24" size="150,62">
+  <package name="grq-usidebar" location="966,665" size="244,416">
+    <action name="usidebar_*" location="41,70" size="150,314">
       <result name="usilverbuy">
         <resourceEdge source="usilverbuy" routing="0" target="usilverbuy.jsp" />
       </result>
       <result name="usilversell">
         <resourceEdge source="usilversell" routing="0" target="usilversell.jsp" />
       </result>
+      <result name="uinquiryaccount">
+        <resourceEdge source="uinquiryaccount" routing="0" target="uinquiryaccount.jsp" />
+      </result>
+      <result name="uinquirysilverrecord">
+        <resourceEdge source="uinquirysilverrecord" routing="0" target="uinquirysilverrecord.jsp" />
+      </result>
+      <result name="uinquirygame">
+        <resourceEdge source="uinquirygame" routing="0" target="uinquirygame.jsp" />
+      </result>
+      <result name="uinvest">
+        <resourceEdge source="uinvest" routing="0" target="uinvest.jsp" />
+      </result>
+      <result name="uinvestrecord">
+        <resourceEdge source="uinvestrecord" routing="0" target="uinvestrecord.jsp" />
+      </result>
+      <result name="ugiro">
+        <resourceEdge source="ugiro" routing="0" target="ugiro.jsp" />
+      </result>
+      <result name="ugirorecord">
+        <resourceEdge source="ugirorecord" routing="0" target="ugirorecord.jsp" />
+      </result>
+      <result name="uprofile">
+        <resourceEdge source="uprofile" routing="0" target="uprofile.jsp" />
+      </result>
+      <result name="upassquestion">
+        <resourceEdge source="upassquestion" routing="0" target="upassquestion.jsp" />
+      </result>
+      <result name="ubankcard">
+        <resourceEdge source="ubankcard" routing="0" target="ubankcard.jsp" />
+      </result>
+      <result name="umaster">
+        <resourceEdge source="umaster" routing="0" target="umaster.jsp" />
+      </result>
+      <result name="uapprentice">
+        <resourceEdge source="uapprentice" routing="0" target="uapprentice.jsp" />
+      </result>
     </action>
   </package>
-  <webResource name="usilverbuy.jsp" path="/WEB-INF/pages/manage/usilverbuy.jsp" location="350,500" size="150,55" />
-  <webResource name="usilversell.jsp" path="/WEB-INF/pages/manage/usilversell.jsp" location="348,563" size="150,55" />
+  <package name="grq-msidebar" location="219,254" size="240,329">
+    <action name="msidebar_*" location="46,49" size="150,230">
+      <result name="webserver">
+        <resourceEdge source="webserver" routing="0" target="webserver.jsp" />
+      </result>
+      <result name="webdatabase">
+        <resourceEdge source="webdatabase" routing="0" target="webdatabase.jsp" />
+      </result>
+      <result name="webotherinformation">
+        <resourceEdge source="webotherinformation" routing="0" target="webotherinformation.jsp" />
+      </result>
+      <result name="adminuser">
+        <resourceEdge source="adminuser" routing="0" target="adminuser.jsp" />
+      </result>
+      <result name="playeruser">
+        <resourceEdge source="playeruser" routing="0" target="playeruser.jsp" />
+      </result>
+      <result name="assetgiro">
+        <resourceEdge source="assetgiro" routing="0" target="assetgiro.jsp" />
+      </result>
+      <result name="assetsilver">
+        <resourceEdge source="assetsilver" routing="0" target="assetsilver.jsp" />
+      </result>
+      <result name="assetinvest">
+        <resourceEdge source="assetinvest" routing="0" target="assetinvest.jsp" />
+      </result>
+      <result name="operatesales">
+        <resourceEdge source="operatesales" routing="0" target="operatesales.jsp" />
+      </result>
+      <result name="operateoption">
+        <resourceEdge source="operateoption" routing="0" target="operateoption.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="mbody.jsp" path="/WEB-INF/pages/manage/mbody.jsp" location="757,146" size="150,55" />
+  <webResource name="mfooter.jsp" path="/WEB-INF/pages/manage/mfooter.jsp" location="761,212" size="150,55" />
+  <webResource name="usidebar.jsp" path="/WEB-INF/pages/manage/usidebar.jsp" location="764,355" size="156,68" />
+  <webResource name="msidebar.jsp" path="/WEB-INF/pages/manage/msidebar.jsp" location="765,438" size="154,53" />
+  <webResource name="usilverbuy.jsp" path="/WEB-INF/pages/manage/usilverbuy.jsp" location="1358,667" size="150,55" />
+  <webResource name="usilversell.jsp" path="/WEB-INF/pages/manage/usilversell.jsp" location="617,694" size="150,55" />
+  <webResource name="uinquiryaccount.jsp" path="/WEB-INF/pages/manage/uinquiryaccount.jsp" location="1358,733" size="150,55" />
+  <webResource name="uinquirysilverrecord.jsp" path="/WEB-INF/pages/manage/uinquirysilverrecord.jsp" location="621,759" size="150,55" />
+  <webResource name="uinquirygame.jsp" path="/WEB-INF/pages/manage/uinquirygame.jsp" location="1358,794" size="150,55" />
+  <webResource name="uinvest.jsp" path="/WEB-INF/pages/manage/uinvest.jsp" location="621,822" size="150,55" />
+  <webResource name="uinvestrecord.jsp" path="/WEB-INF/pages/manage/uinvestrecord.jsp" location="1357,859" size="150,55" />
+  <webResource name="ugiro.jsp" path="/WEB-INF/pages/manage/ugiro.jsp" location="620,885" size="150,55" />
+  <webResource name="ugirorecord.jsp" path="/WEB-INF/pages/manage/ugirorecord.jsp" location="1357,925" size="150,55" />
+  <webResource name="uprofile.jsp" path="/WEB-INF/pages/manage/uprofile.jsp" location="622,947" size="150,55" />
+  <webResource name="upassquestion.jsp" path="/WEB-INF/pages/manage/upassquestion.jsp" location="1355,996" size="150,55" />
+  <webResource name="ubankcard.jsp" path="/WEB-INF/pages/manage/ubankcard.jsp" location="618,1010" size="150,55" />
+  <webResource name="umaster.jsp" path="/WEB-INF/pages/manage/umaster.jsp" location="1354,1065" size="150,55" />
+  <webResource name="uapprentice.jsp" path="/WEB-INF/pages/manage/uapprentice.jsp" location="619,1080" size="150,55" />
+  <webResource name="manage.jsp" path="/WEB-INF/pages/manage/manage.jsp" location="758,80" size="150,55" />
+  <webResource name="webserver.jsp" path="/WEB-INF/pages/manage/webserver.jsp" location="-19,281" size="150,55" />
+  <webResource name="webdatabase.jsp" path="/WEB-INF/pages/manage/webdatabase.jsp" location="548,270" size="150,55" />
+  <webResource name="webotherinformation.jsp" path="/WEB-INF/pages/manage/webotherinformation.jsp" location="-16,347" size="150,55" />
+  <webResource name="adminuser.jsp" path="/WEB-INF/pages/manage/adminuser.jsp" location="551,333" size="150,55" />
+  <webResource name="playeruser.jsp" path="/WEB-INF/pages/manage/playeruser.jsp" location="-18,407" size="150,55" />
+  <webResource name="assetgiro.jsp" path="/WEB-INF/pages/manage/assetgiro.jsp" location="553,395" size="150,55" />
+  <webResource name="assetsilver.jsp" path="/WEB-INF/pages/manage/assetsilver.jsp" location="-16,467" size="150,55" />
+  <webResource name="assetinvest.jsp" path="/WEB-INF/pages/manage/assetinvest.jsp" location="553,459" size="150,55" />
+  <webResource name="operatesales.jsp" path="/WEB-INF/pages/manage/operatesales.jsp" location="-15,526" size="150,55" />
+  <webResource name="operateoption.jsp" path="/WEB-INF/pages/manage/operateoption.jsp" location="552,522" size="150,55" />
+  <extendsEdge source="grq-sidebar" target="grq-back" routing="0" />
+  <extendsEdge source="grq-usidebar" target="grq-sidebar" routing="0" />
+  <extendsEdge source="grq-msidebar" target="grq-sidebar" routing="0" />
 </Struts2Diagram>
 

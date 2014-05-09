@@ -36,9 +36,6 @@
 	<!-- shrak页面的headerMenu -->
 	<package name="grq-headerMenu" namespace="/pages" extends="grq-shark">
 		<action name="headerMenu_*" class="sharkAction" method="{1}">
-			<result name="uinquiryaccount">/WEB-INF/pages/manage/uinquiryaccount.jsp</result>
-			<result name="usilverbuy">/WEB-INF/pages/manage/usilverbuy.jsp</result>
-			<result name="usilversell">/WEB-INF/pages/manage/usilversell.jsp</result>
 			<result name="grule">/WEB-INF/pages/shark/grule.jsp</result>
 		</action>
 	</package>

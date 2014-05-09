@@ -13,36 +13,6 @@ public class SharkAction {
 	}
 	
 	/**
-	 * 导向uinquiryaccount页面
-	 * @return
-	 * @throws Exception
-	 */
-	public String uinquiryaccount() throws Exception{
-
-		return "uinquiryaccount";
-	}
-	
-	/**
-	 * 导向usilverbuy页面
-	 * @return
-	 * @throws Exception
-	 */
-	public String usilverbuy() throws Exception{
-
-		return "usilverbuy";
-	}
-	
-	/**
-	 * 导向usilversell页面
-	 * @return
-	 * @throws Exception
-	 */
-	public String usilversell() throws Exception{
-
-		return "usilversell";
-	}
-	
-	/**
 	 * 导向grule页面
 	 * @return
 	 * @throws Exception

@@ -4,12 +4,13 @@
 	<!-- 后台管理 -->
 	<package name="grq-back" namespace="/pages" extends="grq-default">
 		<action name="manage_*" class="manageAction" method="{1}">
+			<result name="manage">/WEB-INF/pages/manage/manage.jsp</result>
             <result name="mbody">/WEB-INF/pages/manage/mbody.jsp</result>
             <result name="mfooter">/WEB-INF/pages/manage/mfooter.jsp</result>
 		</action>
 	</package>
 	
-	<!-- 后台栏目类别管理 -->
+	<!-- 后台目录类别管理 -->
 	<package name="grq-sidebar" namespace="/pages" extends="grq-back">
 		<action name="sidebar_*" class="manageAction" method="{1}">
             <result name="usidebar">/WEB-INF/pages/manage/usidebar.jsp</result>
@@ -17,11 +18,39 @@
 		</action>
 	</package>
 	
-	<!-- 后台普通用户栏目管理 -->
+	<!-- 后台普通用户目录管理 -->
 	<package name="grq-usidebar" namespace="/pages" extends="grq-sidebar">
 		<action name="usidebar_*" class="manageAction" method="{1}">
             <result name="usilverbuy">/WEB-INF/pages/manage/usilverbuy.jsp</result>
             <result name="usilversell">/WEB-INF/pages/manage/usilversell.jsp</result>
+            <result name="uinquiryaccount">/WEB-INF/pages/manage/uinquiryaccount.jsp</result>
+            <result name="uinquirysilverrecord">/WEB-INF/pages/manage/uinquirysilverrecord.jsp</result>
+            <result name="uinquirygame">/WEB-INF/pages/manage/uinquirygame.jsp</result>
+            <result name="uinvest">/WEB-INF/pages/manage/uinvest.jsp</result>
+            <result name="uinvestrecord">/WEB-INF/pages/manage/uinvestrecord.jsp</result>
+            <result name="ugiro">/WEB-INF/pages/manage/ugiro.jsp</result>
+            <result name="ugirorecord">/WEB-INF/pages/manage/ugirorecord.jsp</result>
+            <result name="uprofile">/WEB-INF/pages/manage/uprofile.jsp</result>
+            <result name="upassquestion">/WEB-INF/pages/manage/upassquestion.jsp</result>
+            <result name="ubankcard">/WEB-INF/pages/manage/ubankcard.jsp</result>
+            <result name="umaster">/WEB-INF/pages/manage/umaster.jsp</result>
+            <result name="uapprentice">/WEB-INF/pages/manage/uapprentice.jsp</result>
+		</action>
+	</package>
+	
+	<!-- 后台管理用户目录管理 -->
+	<package name="grq-msidebar" namespace="/pages" extends="grq-sidebar">
+		<action name="msidebar_*" class="manageAction" method="{1}">
+            <result name="webserver" type="dispatcher">/WEB-INF/pages/manage/webserver.jsp</result>
+            <result name="webdatabase" type="dispatcher">/WEB-INF/pages/manage/webdatabase.jsp</result>
+            <result name="webotherinformation" type="dispatcher">/WEB-INF/pages/manage/webotherinformation.jsp</result>
+            <result name="adminuser" type="dispatcher">/WEB-INF/pages/manage/adminuser.jsp</result>
+            <result name="playeruser" type="dispatcher">/WEB-INF/pages/manage/playeruser.jsp</result>
+            <result name="assetgiro" type="dispatcher">/WEB-INF/pages/manage/assetgiro.jsp</result>
+            <result name="assetsilver" type="dispatcher">/WEB-INF/pages/manage/assetsilver.jsp</result>
+            <result name="assetinvest" type="dispatcher">/WEB-INF/pages/manage/assetinvest.jsp</result>
+            <result name="operatesales" type="dispatcher">/WEB-INF/pages/manage/operatesales.jsp</result>
+            <result name="operateoption" type="dispatcher">/WEB-INF/pages/manage/operateoption.jsp</result>
 		</action>
 	</package>
 	

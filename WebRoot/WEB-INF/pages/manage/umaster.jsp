@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
-<%@ include file="mbody.jsp"%>
+
     <div class="content">
 <div class="umaster">
 <table border="1">
@@ -137,4 +137,3 @@
   </table>
 	</div>
     <!-- end .content --></div>
-<%@ include file="mfooter.jsp"%>

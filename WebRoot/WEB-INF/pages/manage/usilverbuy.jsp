@@ -1,6 +1,7 @@
 <%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
-<%@ include file="mbody.jsp"%>
-    <div class="content">
+<%@ taglib prefix="s" uri="/struts-tags"%>
+<s:set var="context_path" value="#request.get('javax.servlet.forward.context_path')"></s:set>
+<link href="${context_path}/css/manage.css" rel="stylesheet" type="text/css" />    <div class="content">
     	<div class="usilverbuy">
     <form action="#" method="post">
 		<table align="center">
@@ -50,4 +51,3 @@
 	</form>
     </div>
     <!-- end .content --></div>
-<%@ include file="mfooter.jsp"%>

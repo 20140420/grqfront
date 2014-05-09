@@ -8,20 +8,10 @@ public class SharkAction {
 	 * @throws Exception
 	 */
 	public String gheader() throws Exception{
-
+		System.out.println("这里是SharkAction文件");
 		return "gheader";
 	}
-	
-	/**
-	 * 导向grule页面
-	 * @return
-	 * @throws Exception
-	 */
-	public String grule() throws Exception{
 
-		return "grule";
-	}
-	
 	/**
 	 * 工具chattool页面
 	 * @return
@@ -48,8 +38,19 @@ public class SharkAction {
 	 * @throws Exception
 	 */
 	public String gpanel() throws Exception{
-		System.out.println("这里是SharkAction文件gpanel");
+
 		return "gpanel";
+	}
+	
+	
+	/**
+	 * 导向grule页面
+	 * @return
+	 * @throws Exception
+	 */
+	public String grule() throws Exception{
+
+		return "grule";
 	}
 
 }

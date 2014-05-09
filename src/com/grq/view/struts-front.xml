@@ -31,14 +31,9 @@
 			<result name="chattool">/WEB-INF/pages/chat/chattool.jsp</result>
 			<result name="gdial">/WEB-INF/pages/shark/gdial.jsp</result>
 			<result name="gpanel">/WEB-INF/pages/shark/gpanel.jsp</result>
-		</action>
-	</package>
-	<!-- shrak页面的headerMenu -->
-	<package name="grq-headerMenu" namespace="/pages" extends="grq-shark">
-		<action name="headerMenu_*" class="sharkAction" method="{1}">
+			<!-- shrak页面头部菜单 -->			
 			<result name="grule">/WEB-INF/pages/shark/grule.jsp</result>
 		</action>
 	</package>
-	
 	
 </struts>    

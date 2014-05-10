@@ -17,6 +17,7 @@
 			<result name="login_user">/WEB-INF/pages/Success.jsp</result> -->
 		</action>
 	</package>
+	
     <!-- 主页菜单按键向导 -->
     <package name="grq-index" namespace="/pages" extends="grq-front">
 		<action name="indexMenu_*" method="{1}" class="indexMenuAction">
@@ -24,6 +25,7 @@
 			<result name="snake">/WEB-INF/pages/snake/snake.jsp</result>
 		</action>	
     </package>
+    
 	<!-- shrak页面 -->
 	<package name="grq-shark" namespace="/pages" extends="grq-front">
 		<action name="shark_*" class="sharkAction" method="{1}">

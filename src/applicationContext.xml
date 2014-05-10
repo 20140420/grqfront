@@ -5,7 +5,7 @@
 	xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 	
-	<!-- 用spring支持strut与Action类的链接 -->
+	<!-- 登录  用spring支持strut与Action类的链接 -->
 	<!-- mgr采用 Spring依赖注入 -->
 	<bean id="mgr" class="com.grq.controller.service.impl.ActionManagerImpl">
 		<property name="userDAO" ref="hmpuserDAO"></property>
@@ -14,10 +14,11 @@
 		<property name="sessionFactory">
 			<ref local="sessionFactory"/>		
 		</property>	
-	</bean>	
+	</bean>	 
 	<bean id="springLoginAction" class="com.grq.controller.action.LoginAction">
 		<property name="mgr" ref="mgr"></property>
 	</bean>	
+	
 	<!-- 主页菜单按键向导Action类 -->
 	<bean id="indexMenuAction" class="com.grq.controller.action.IndexMenuAction">
 	</bean>	
@@ -27,6 +28,22 @@
 	<!-- 后台页面Action类 -->
 	<bean id="manageAction" class="com.grq.controller.action.ManageAction">
 	</bean>
+	
+	
+	<!-- 注册  以下使一些用到的类 在使用类中均没有实例化这个类，都交给了spring管理  -->
+	<!-- DAObean -->
+	<bean id="employeeDao"  scope="singleton" class="com.ucap.emp.dao.impl.EmployeeDaoImpl"> 
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean> 	
+	<!-- 配置注入：service<-DAO，可以多个dao注入同一个service -->    
+	<bean id="employeeService"  class="com.ucap.emp.service.impl.EmployeeServiceImpl">        
+		<property name="employeeDao" ref="employeeDao"></property>    
+	</bean>
+	<!-- 配置注入：Action<-service  -->    
+	<bean id="employeeAction"  class="com.ucap.emp.action.EmployeeAction">      
+		<property name="employeeService" ref="employeeService"></property>     
+	</bean> 
+	
 	
 
 	<!-- 添加hibernate文件支持，用hibernate.cfg.xml链接数据库 -->

@@ -37,4 +37,5 @@
 	<table name="tb_system" catalog="guruquan" class="System"></table>
 	<table name="tb_u_online" catalog="guruquan" class="UOnline"></table>
 	<table name="test" catalog="mytest" class="User"></table>
+	<table name="t_employee" catalog="guruquan" class="Employee"></table>
 </hibernate-reverse-engineering>

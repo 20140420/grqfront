@@ -29,23 +29,6 @@
 	<bean id="manageAction" class="com.grq.controller.action.ManageAction">
 	</bean>
 	
-	
-	<!-- 注册  以下使一些用到的类 在使用类中均没有实例化这个类，都交给了spring管理  -->
-	<!-- DAObean -->
-	<bean id="employeeDao"  scope="singleton" class="com.ucap.emp.dao.impl.EmployeeDaoImpl"> 
-		<property name="sessionFactory" ref="sessionFactory"></property>
-	</bean> 	
-	<!-- 配置注入：service<-DAO，可以多个dao注入同一个service -->    
-	<bean id="employeeService"  class="com.ucap.emp.service.impl.EmployeeServiceImpl">        
-		<property name="employeeDao" ref="employeeDao"></property>    
-	</bean>
-	<!-- 配置注入：Action<-service  -->    
-	<bean id="employeeAction"  class="com.ucap.emp.action.EmployeeAction">      
-		<property name="employeeService" ref="employeeService"></property>     
-	</bean> 
-	
-	
-
 	<!-- 添加hibernate文件支持，用hibernate.cfg.xml链接数据库 -->
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
 		<property name="configLocation"	value="classpath:hibernate.cfg.xml"></property>

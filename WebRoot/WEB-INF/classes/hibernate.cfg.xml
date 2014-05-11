@@ -22,7 +22,7 @@
 		<property name="myeclipse.connection.profile">grq</property>
 
 		<mapping resource="com/grq/model/bean/User.hbm.xml" />
-		<mapping resource="com/ucap/emp/pojo/Employee.hbm.xml" />
+
 		<!-- -->
 		<!--
 			<mapping resource="com/grq/model/bean/Silver.hbm.xml" />

@@ -9,18 +9,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <s:url action="indexMenu_shark" namespace="/pages"	var="indexMenu_shark"></s:url>
 <!-- snake按键向导 -->
 <s:url action="indexMenu_snake" namespace="/pages" var="indexMenu_snake"></s:url>
-<!-- 用户注册修改列表 -->
-<s:url action="addemployee" namespace="/emp" var="addemployee"></s:url>
+
 <!doctype html>
 <html>
 <head>
 <base href="<%=basePath%>">
 <meta charset="utf-8" />
 <title>主页</title>
-<!--<link href="css/web.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="css_example_url" />
-<script src="js_example_url"></script>
-<script src="js/jquery.js" type="text/javascript"></script>-->
+
 </head>
 <body>
 <div class="container">
@@ -42,7 +38,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <li><a href="investments.jsp" target="_blank">投资理财</a></li>
                 <li><a href="charts.html" target="_blank">实时价格</a></li>
                 <li><a href="plans.jsp" target="_blank">网络电视</a></li>                
-                <li><a href="${addemployee}" target="_blank">汽车强国</a></li>
+                <li><a href="plans.jsp" target="_blank">汽车强国</a></li>
               </ul>
             </div>       
       </div> <!-- index END -->

@@ -43,6 +43,7 @@ public class EmployeeAction extends ActionSupport{
 	 * @return
 	 */     
 	public String list(){
+		System.out.println("这里是EmployeeAction文件list()函数");
 		list = this.employeeService.findAll(employee); 
 		// ServletActionContext.getRequest().setAttribute("list", list); 
 		return "list";  
@@ -52,6 +53,7 @@ public class EmployeeAction extends ActionSupport{
 	 * @return
 	 */
 	public String add(){
+		System.out.println("这里是EmployeeAction文件add()函数");
 		return "add"; 
 	}
 
@@ -61,6 +63,7 @@ public class EmployeeAction extends ActionSupport{
 	 * @return
 	 */
 	public String addSave(){
+		System.out.println("这里是EmployeeAction文件addSave()函数");
 		this.employeeService.save(this.employee);
 		employee=new Employee();
 		return list();
@@ -72,6 +75,7 @@ public class EmployeeAction extends ActionSupport{
 	 * @return
 	 */
 	public String updateBefore(){  
+		System.out.println("这里是EmployeeAction文件updateBefore()函数");
 		employee=this.employeeService.findById(employee.getId());
 		return "update";    
 	}

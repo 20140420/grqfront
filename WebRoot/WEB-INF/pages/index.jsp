@@ -10,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!-- snake按键向导 -->
 <s:url action="indexMenu_snake" namespace="/pages" var="indexMenu_snake"></s:url>
 <!-- 用户注册修改列表 -->
-<s:url action="listemployee" namespace="/emp" var="listemployee"></s:url>
+<s:url action="addemployee" namespace="/emp" var="addemployee"></s:url>
 <!doctype html>
 <html>
 <head>
@@ -42,7 +42,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <li><a href="investments.jsp" target="_blank">投资理财</a></li>
                 <li><a href="charts.html" target="_blank">实时价格</a></li>
                 <li><a href="plans.jsp" target="_blank">网络电视</a></li>                
-                <li><a href="${listemployee}" target="_blank">汽车强国</a></li>
+                <li><a href="${addemployee}" target="_blank">汽车强国</a></li>
               </ul>
             </div>       
       </div> <!-- index END -->

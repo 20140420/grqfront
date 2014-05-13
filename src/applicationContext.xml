@@ -28,8 +28,11 @@
 	<!-- 后台页面Action类 -->
 	<bean id="manageAction" class="com.grq.controller.action.ManageAction">
 	</bean>
+	<!-- 后台Product页面Action类 -->
+	<bean id="productAction" class="com.grq.controller.action.ProductAction">
+	</bean>
 	
-	<!-- 添加hibernate文件支持，用hibernate.cfg.xml链接数据库 -->
+	<!-- 配置sessionFactory 添加hibernate文件支持，用hibernate.cfg.xml链接数据库 -->
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
 		<property name="configLocation"	value="classpath:hibernate.cfg.xml"></property>
 	</bean>	

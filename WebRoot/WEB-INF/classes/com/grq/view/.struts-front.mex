@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Struts2Diagram version="2.0">
   <package name="grq-front" location="232,192" size="280,140">
-    <action name="index" location="70,59" size="150,41">
+    <action name="index" location="83,72" size="150,41">
       <result name="success">
         <resourceEdge source="success" routing="0" target="index.jsp" />
       </result>
     </action>
   </package>
   <package name="grq-login" location="229,10" size="268,151">
-    <action name="login" location="67,85" size="150,41">
+    <action name="login" location="80,98" size="150,41">
       <result name="login_user">
         <resourceEdge source="login_user" routing="0" target="manage.jsp" />
       </result>
     </action>
   </package>
   <package name="grq-index" location="236,379" size="280,148">
-    <action name="indexMenu_*" location="77,48" size="150,62">
+    <action name="indexMenu_*" location="90,61" size="150,62">
       <result name="shark">
         <resourceEdge source="shark" routing="0" target="shark.jsp" />
       </result>
@@ -25,7 +25,7 @@
     </action>
   </package>
   <package name="grq-shark" location="597,166" size="206,188">
-    <action name="shark_*" location="30,37" size="150,125">
+    <action name="shark_*" location="43,50" size="150,125">
       <result name="gheader">
         <resourceEdge source="gheader" routing="0" target="gheader.jsp" />
       </result>
@@ -46,15 +46,14 @@
   <webResource name="index.jsp" path="/WEB-INF/pages/index.jsp" location="42,261" size="150,55" />
   <webResource name="shark.jsp" path="/WEB-INF/pages/shark/shark.jsp" location="28,368" size="150,55" />
   <webResource name="snake.jsp" path="/WEB-INF/pages/snake/snake.jsp" location="28,433" size="150,55" />
-  <webResource name="chattool.jsp" path="/WEB-INF/pages/chat/chattool.jsp" location="934,175" size="150,55" />
-  <webResource name="gdial.jsp" path="/WEB-INF/pages/shark/gdial.jsp" location="933,236" size="150,55" />
-  <webResource name="gpanel.jsp" path="/WEB-INF/pages/shark/gpanel.jsp" location="934,301" size="150,55" />
-  <webResource name="gheader.jsp" path="/WEB-INF/pages/shark/gheader.jsp" location="933,110" size="150,55" />
-  <webResource name="grule.jsp" path="/WEB-INF/pages/shark/grule.jsp" location="937,365" size="150,55" />
+  <webResource name="chattool.jsp" path="/WEB-INF/pages/chat/chattool.jsp" location="866,171" size="150,55" />
+  <webResource name="gdial.jsp" path="/WEB-INF/pages/shark/gdial.jsp" location="865,232" size="150,55" />
+  <webResource name="gpanel.jsp" path="/WEB-INF/pages/shark/gpanel.jsp" location="866,297" size="150,55" />
+  <webResource name="gheader.jsp" path="/WEB-INF/pages/shark/gheader.jsp" location="865,106" size="150,55" />
+  <webResource name="grule.jsp" path="/WEB-INF/pages/shark/grule.jsp" location="869,361" size="150,55" />
   <webResource name="manage.jsp" path="/WEB-INF/pages/manage/manage.jsp" location="27,115" size="150,55" />
   <extendsEdge source="grq-login" target="grq-front" routing="0" />
   <extendsEdge source="grq-index" target="grq-front" routing="0" />
   <extendsEdge source="grq-shark" target="grq-front" routing="0" />
-  <extendsEdge source="grq-headerMenu" target="grq-shark" routing="0" />
 </Struts2Diagram>
 

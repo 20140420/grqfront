@@ -39,7 +39,7 @@ public class UserDAOImpl extends HibernateDaoSupport implements UserDAO {
 		getHibernateTemplate().delete(user);
 	}
 
-	@SuppressWarnings("unchecked")
+	
 	@Override
 	public List<User> findAll() {
 		// TODO Auto-generated method stub
@@ -53,7 +53,7 @@ public class UserDAOImpl extends HibernateDaoSupport implements UserDAO {
 		//delete(2)£»
 		//String() args=(username,password);
 		System.out.println("³É¹¦É¾³ý");
-		List ul =getHibernateTemplate().find("from com.grq.model.bean.User au where au.email = '"+email+"'and au.password = '"+password+"'");
+		List ul =getHibernateTemplate().find("from User as au where au.email = '"+email+"'and au.password = '"+password+"'");
 		
 		if(ul.size()==1)
 		{

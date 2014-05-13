@@ -37,6 +37,13 @@
             <result name="uapprentice">/WEB-INF/pages/manage/uapprentice.jsp</result>
 		</action>
 	</package>
+	<!-- 商品管理 -->
+    <package name="grq-usidebar-product" namespace="/pages" extends="grq-sidebar">
+		<action name="product_*" method="{1}" class="productAction">
+			<result name="input">/WEB-INF/pages/manage/product_add.jsp</result>
+			<result name="list">/WEB-INF/pages/manage/product_list.jsp</result>
+		</action>	
+    </package>
 	
 	<!-- 后台管理用户目录管理 -->
 	<package name="grq-msidebar" namespace="/pages" extends="grq-sidebar">

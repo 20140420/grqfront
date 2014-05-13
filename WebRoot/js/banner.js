@@ -1,3 +1,7 @@
+/*!
+ * index-pic.html
+ */
+
 $(document).ready(function(){
 						   
 	var animateDone=true;

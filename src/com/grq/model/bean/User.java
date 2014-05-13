@@ -11,7 +11,11 @@ package com.grq.model.bean;
 public class User  implements java.io.Serializable {
 
 
-    // Fields    
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	// Fields    
 
 	private Integer userId;
     private String email;

@@ -49,8 +49,8 @@
 }
 #right {
 	float: left;
-	height: 490px;
-	width: 698px;
+	height: auto;
+	width: 700px;
 	margin-bottom: 5px;
 	margin-left: 5px;
 }
@@ -76,8 +76,9 @@
 	background-repeat: no-repeat;
 	float: left;
 	height: 20px;
-	width: 700px;
+	width: 100%;
 	padding-top: 9px;
+	padding-bottom: 9px;
 }
 #right_top01 {
 	background-image: url(images/ht_02_06.gif);
@@ -89,15 +90,15 @@
 }
 #right_mid {
 	float: left;
-	height: auto;
-	width: 700px;
+	height: 400px;
+	width: 100%;
+	border: 1px solid #c6e8ff;
 }
 #tiao {
 	padding: 3px;
 	float: left;
 	height: 24px;
-	width: 692px;
-	border: 1px solid #c6e8ff;
+	width: 100%;
 	margin-top: 5px;
 }
 #tiao input {
@@ -112,7 +113,7 @@
 }
 #right_foot {
 	height: 29px;
-	width: 700px;
+	width: 100%;
 	text-align: center;
 	margin-top: 5px;
 	float: left;
@@ -150,4 +151,11 @@
 	font-size: 12px;
 	color: #0099CC;
 	border: 1px solid #CCCCCC;
+}
+.product_add {
+	background-color: #c6e8ff;
+	height: 22px;
+	width: 105px;
+	text-align: right;
+	padding-top: 3px;
 }

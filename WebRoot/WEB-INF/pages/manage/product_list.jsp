@@ -28,7 +28,7 @@ td{font-size: 12px;}
 	<div id="right_mid">
 		<div id="tiao">
 			<table width="693" height="29" border="0">
-				<s:iterator value="pageModel.list">
+			<s:iterator value="pageModel.list">
 					<tr>
 						<td width="37" height="27" align="center"><s:property value="id" /></td>
 						<td width="120" align="center">
@@ -53,15 +53,23 @@ td{font-size: 12px;}
 							</s:a>
 						</td>
 					</tr>
-				</s:iterator>
+			</s:iterator>
 			</table>
 		</div>
 	</div>
-	<div id="right_foot01">
-	<s:url var="first" action="product_list" namespace="/admin/product"><s:param name="pageNo" value="1"></s:param></s:url> 
-	<s:url var="previous" action="product_list" namespace="/admin/product"><s:param name="pageNo" value="pageModel.pageNo-1"></s:param></s:url> 
-	<s:url var="last" action="product_list" namespace="/admin/product"><s:param name="pageNo" value="pageModel.bottomPageNo"></s:param></s:url> 
-	<s:url var="next" action="product_list" namespace="/admin/product"><s:param name="pageNo" value="pageModel.pageNo+1"></s:param></s:url> 
+  <div id="right_foot01">
+	<s:url var="first" action="product_list" namespace="/admin/product">
+		<s:param name="pageNo" value="1"></s:param>
+	</s:url> 
+	<s:url var="previous" action="product_list" namespace="/admin/product">
+		<s:param name="pageNo" value="pageModel.pageNo-1"></s:param>
+	</s:url> 
+	<s:url var="last" action="product_list" namespace="/admin/product">
+		<s:param name="pageNo" value="pageModel.bottomPageNo"></s:param>
+	</s:url> 
+	<s:url var="next" action="product_list" namespace="/admin/product">
+		<s:param name="pageNo" value="pageModel.pageNo+1"></s:param>
+	</s:url> 
 	<s:include value="/WEB-INF/pages/common/page.jsp"></s:include>
-	</div>
+  </div>
 </div>

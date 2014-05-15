@@ -11,15 +11,19 @@ public class ProductAction extends BaseAction  {
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	
 	/**
 	 * 添加商品
 	 */
 	@Override
 	public String add() throws Exception {
-		System.out.println("这里是ProductAction文件");
 		//createCategoryTree();
 		return INPUT;//返回后台商品添加页面
+	}
+	
+	public String save() throws Exception {
+		System.out.println("这里是ProductAction文件save");
+
+		return list();//返回后台商品列表页面
 	}
 	/**
 	 * 保存商品

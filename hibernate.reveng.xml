@@ -38,17 +38,4 @@
 	<table name="tb_u_online" catalog="guruquan" class="UOnline"></table>
 	<table name="test" catalog="mytest" class="User"></table>
 	<table name="t_employee" catalog="guruquan" class="Employee"></table>
-	<table name="tb_uploadfile" catalog="guruquan" class="UploadFile"></table>
-	<table name="tb_productinfo" catalog="guruquan"
-		class="ProductInfo">
-		<primary-key>
-			<generator class="native"></generator>
-		</primary-key>
-	</table>
-<table name="tb_productcategory" catalog="guruquan"
-	class="ProductCategory">
-	<primary-key>
-		<generator class="native"></generator>
-	</primary-key>
-</table>
 </hibernate-reverse-engineering>

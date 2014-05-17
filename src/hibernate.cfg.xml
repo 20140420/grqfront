@@ -23,12 +23,6 @@
 
 		<mapping resource="com/grq/model/bean/User.hbm.xml" />
 
-		<mapping resource="com/lyq/model/product/ProductInfo.hbm.xml" />
-		<mapping
-			resource="com/lyq/model/product/ProductCategory.hbm.xml" />
-		<mapping resource="com/lyq/model/product/UploadFile.hbm.xml" />
-		<mapping resource="./ProductCategory.hbm.xml" />
-
 		<!-- -->
 		<!--
 			<mapping resource="com/grq/model/bean/Silver.hbm.xml" />

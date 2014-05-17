@@ -5,7 +5,10 @@ import java.util.Map;
 import org.apache.struts2.interceptor.ApplicationAware;
 import org.apache.struts2.interceptor.RequestAware;
 import org.apache.struts2.interceptor.SessionAware;
+import org.springframework.beans.factory.annotation.Autowired;
 
+import com.grq.model.dao.ProductCategoryDao;
+import com.grq.model.dao.ProductDao;
 import com.opensymphony.xwork2.ActionSupport;
 
 
@@ -16,11 +19,20 @@ import com.opensymphony.xwork2.ActionSupport;
 public class BaseAction extends ActionSupport implements RequestAware,
 		SessionAware, ApplicationAware {
 	private static final long serialVersionUID = 1L;
+	
+	protected int pageNo = 1;
+	protected int pageSize = 4;
 
 	
 	public static final String LIST = "list";
 	public static final String ADD = "add";
 
+	
+	// 注入Dao
+	@Autowired
+	protected ProductCategoryDao categoryDao;
+	@Autowired
+	protected ProductDao productDao;
 
 	// Map类型的request
 	protected Map<String, Object> request;
@@ -52,10 +64,7 @@ public class BaseAction extends ActionSupport implements RequestAware,
 	public String add() throws Exception {
 		return ADD;
 	}
-	public String list() throws Exception {
-		// TODO Auto-generated method stub
-		return LIST;
-	}
+
 
 
 

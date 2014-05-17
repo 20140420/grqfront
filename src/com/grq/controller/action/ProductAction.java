@@ -1,5 +1,9 @@
 package com.grq.controller.action;
 
+import com.grq.model.PageModel;
+
+import com.lyq.model.product.ProductInfo;
+
 /**
  * 商品Action
  * @author JiangQuan
@@ -10,6 +14,7 @@ public class ProductAction extends BaseAction  {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+
 	
 	/**
 	 * 添加商品
@@ -21,8 +26,6 @@ public class ProductAction extends BaseAction  {
 	}
 	
 	public String save() throws Exception {
-		System.out.println("这里是ProductAction文件save");
-
 		return list();//返回后台商品列表页面
 	}
 	/**
@@ -76,9 +79,29 @@ public class ProductAction extends BaseAction  {
 	 * @return
 	 * @throws Exception
 	 */
-	@Override
 	public String list() throws Exception{
-		//pageModel = productDao.find(pageNo, pageSize);//调用公共的查询方法
+		System.out.println("这里是ProductAction文件save");
+		pageModel = productDao.find(pageNo, pageSize);//调用公共的查询方法
 		return LIST;//返回后台商品列表页面
 	}
+	
+	
+	
+
+
+
+
+	// 分页组件
+	private PageModel<ProductInfo> pageModel;
+	
+	
+	
+	public PageModel<ProductInfo> getPageModel() {
+		return pageModel;
+	}
+
+	public void setPageModel(PageModel<ProductInfo> pageModel) {
+		this.pageModel = pageModel;
+	}	
+	
 }

@@ -3,8 +3,8 @@ package com.grq.controller.service.impl;
 
 import com.grq.controller.service.ActionManager;
 //import com.grq.model.bean.User;
-import com.grq.model.bean.User;
 import com.grq.model.dao.UserDAO; 
+import com.grq.model.pojo.User;
 
 /**
  * 业务逻辑层接口实现类

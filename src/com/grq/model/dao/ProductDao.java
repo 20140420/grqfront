@@ -3,7 +3,7 @@ package com.grq.model.dao;
 import java.util.List;
 
 import com.grq.model.dao.BaseDao;
-import com.lyq.model.product.ProductInfo;
+import com.grq.model.pojo.product.ProductInfo;
 
 public interface ProductDao extends BaseDao<ProductInfo>{
 	public List<ProductInfo> findCommend();//查询推荐商品

@@ -4,8 +4,8 @@ import java.util.List;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
 //import com.grq.model.bean.User;
-import com.grq.model.bean.User;
 import com.grq.model.dao.UserDAO;
+import com.grq.model.pojo.User;
 
 public class UserDAOImpl extends HibernateDaoSupport implements UserDAO {
 

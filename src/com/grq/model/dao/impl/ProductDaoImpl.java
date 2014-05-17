@@ -10,9 +10,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.grq.model.dao.ProductDao;
 import com.grq.model.PageModel;
-import com.lyq.model.product.ProductInfo;
 
 import com.grq.model.dao.impl.DaoSupport;
+import com.grq.model.pojo.product.ProductInfo;
 
 @Repository("productDao")
 @Transactional

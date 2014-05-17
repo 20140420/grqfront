@@ -1,8 +1,8 @@
 package com.grq.controller.action;
 
 import com.grq.model.PageModel;
+import com.grq.model.pojo.product.ProductInfo;
 
-import com.lyq.model.product.ProductInfo;
 
 /**
  * …Ã∆∑Action

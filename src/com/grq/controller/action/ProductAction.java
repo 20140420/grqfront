@@ -27,7 +27,7 @@ public class ProductAction extends BaseAction  {
 	}
 	
 	public String save() throws Exception {
-		System.out.println("这里是ProductAction文件save");
+		System.out.println("这里是ProductAction文件save未保存");
 		return list();//返回后台商品列表页面
 	}
 	/**

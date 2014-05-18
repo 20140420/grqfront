@@ -2,7 +2,6 @@ package com.grq.controller.service.impl;
 
 
 import com.grq.controller.service.ActionManager;
-//import com.grq.model.bean.User;
 import com.grq.model.dao.UserDAO; 
 import com.grq.model.pojo.User;
 
@@ -45,6 +44,5 @@ public class ActionManagerImpl implements ActionManager {
 		}
 		return null;
 	}
-
 
 }

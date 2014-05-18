@@ -1,4 +1,4 @@
-package com.grq.controller.action;
+package com.grq.controller.action.product;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;

@@ -1,5 +1,6 @@
-package com.grq.controller.action;
+package com.grq.controller.action.product;
 
+import com.grq.controller.action.BaseAction;
 import com.grq.model.PageModel;
 import com.grq.model.pojo.product.ProductInfo;
 

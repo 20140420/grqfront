@@ -29,7 +29,7 @@
 	<bean id="manageAction" class="com.grq.controller.action.ManageAction">
 	</bean>
 	<!-- 后台Product页面Action类 -->
-	<bean id="productAction" class="com.grq.controller.action.ProductAction">
+	<bean id="productAction" class="com.grq.controller.action.product.ProductAction">
 	</bean>
 	
 	<!-- 配置sessionFactory 添加hibernate文件支持，用hibernate.cfg.xml链接数据库 -->

@@ -98,8 +98,10 @@ public class DaoSupport<T> implements BaseDao<T>{
 	public void update(Object obj) {
 		getTemplate().update(obj);
 	}
+	
 	@Transactional(propagation=Propagation.NOT_SUPPORTED,readOnly=true)
 	public PageModel<T> find(final int pageNo, int maxResult) {
+		System.out.println("这里是DaoSupport文件find()普通");
 		return find(null, null, null, pageNo, maxResult);
 	}
 	@Transactional(propagation=Propagation.NOT_SUPPORTED,readOnly=true)
@@ -125,6 +127,7 @@ public class DaoSupport<T> implements BaseDao<T>{
 	public PageModel<T> find(final String where, final Object[] queryParams,
 			final Map<String, String> orderby, final int pageNo,
 			final int maxResult) {
+		System.out.println("这里是DaoSupport文件find()完整");
 		final PageModel<T> pageModel = new PageModel<T>();//实例化分页对象
 		pageModel.setPageNo(pageNo);//设置当前页数
 		pageModel.setPageSize(maxResult);//设置每页显示记录数

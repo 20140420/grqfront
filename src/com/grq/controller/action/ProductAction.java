@@ -21,11 +21,13 @@ public class ProductAction extends BaseAction  {
 	 */
 	@Override
 	public String add() throws Exception {
+		System.out.println("这里是ProductAction文件add");
 		//createCategoryTree();
 		return INPUT;//返回后台商品添加页面
 	}
 	
 	public String save() throws Exception {
+		System.out.println("这里是ProductAction文件save");
 		return list();//返回后台商品列表页面
 	}
 	/**
@@ -80,8 +82,9 @@ public class ProductAction extends BaseAction  {
 	 * @throws Exception
 	 */
 	public String list() throws Exception{
-		System.out.println("这里是ProductAction文件save");
+		System.out.println("这里是ProductAction文件list");
 		pageModel = productDao.find(pageNo, pageSize);//调用公共的查询方法
+		System.out.println("这里是ProductAction文件list显示");
 		return LIST;//返回后台商品列表页面
 	}
 	
@@ -97,10 +100,12 @@ public class ProductAction extends BaseAction  {
 	
 	
 	public PageModel<ProductInfo> getPageModel() {
+		System.out.println("这里是ProductAction文件getPageModel()显示");
 		return pageModel;
 	}
 
 	public void setPageModel(PageModel<ProductInfo> pageModel) {
+		System.out.println("这里是ProductAction文件setPageModel()显示");
 		this.pageModel = pageModel;
 	}	
 	

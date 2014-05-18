@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.grq.model.dao.ProductCategoryDao;
 import com.grq.model.dao.ProductDao;
+import com.grq.model.dao.UploadFileDao;
 import com.opensymphony.xwork2.ActionSupport;
 
 
@@ -20,12 +21,14 @@ public class BaseAction extends ActionSupport implements RequestAware,
 		SessionAware, ApplicationAware {
 	private static final long serialVersionUID = 1L;
 	
-	protected int pageNo = 1;
-	protected int pageSize = 4;
+	protected int pageNo = 1;//当前页
+	protected int pageSize = 4;//每页显示多少条
 
 	
 	public static final String LIST = "list";
+	public static final String EDIT = "edit";
 	public static final String ADD = "add";
+	public static final String SELECT = "select";
 
 	
 	// 注入Dao
@@ -33,6 +36,8 @@ public class BaseAction extends ActionSupport implements RequestAware,
 	protected ProductCategoryDao categoryDao;
 	@Autowired
 	protected ProductDao productDao;
+	@Autowired
+	protected UploadFileDao uploadFileDao;
 
 	// Map类型的request
 	protected Map<String, Object> request;
@@ -57,18 +62,11 @@ public class BaseAction extends ActionSupport implements RequestAware,
 		this.session = session;
 	}
 	
-	
-	
-	
 	// 处理方法
 	public String add() throws Exception {
 		return ADD;
 	}
-
-
-
-
-
-
-	
+	public String select() throws Exception {
+		return SELECT;
+	}
 }

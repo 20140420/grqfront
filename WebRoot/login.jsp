@@ -41,12 +41,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <td class="identification"><input name="password" type="password" placeholder="由字母和数字组成"></td>
                     <td align="center"><input type="submit" value="忘记密码？"></td>
                 </tr>
-                <!-- 制作验证码防止恶心登入请求，提高安全性
+                <!-- 制作验证码防止恶心登入请求，提高安全性 -->
                 <tr>
                     <td class="col1">验证码：</td>
                     <td class="identification"><input type="text" placeholder="从邮箱或手机"></td>
                     <td align="center"><input type="submit" value="获取验证码"></td>
-				</tr> -->
+				</tr>
                 <tr>
                     <td colspan="3" align="center"><input type="submit" value="登录"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="重置" type="reset" value="重置"/></td>
                 </tr>

@@ -21,43 +21,43 @@
 	<!-- 后台普通用户目录管理 -->
 	<package name="grq-usidebar" namespace="/pages" extends="grq-sidebar">
 		<action name="usidebar_*" class="manageAction" method="{1}">
-            <result name="usilverbuy">/WEB-INF/pages/manage/usilverbuy.jsp</result>
-            <result name="usilversell">/WEB-INF/pages/manage/usilversell.jsp</result>
-            <result name="uinquiryaccount">/WEB-INF/pages/manage/uinquiryaccount.jsp</result>
-            <result name="uinquirysilverrecord">/WEB-INF/pages/manage/uinquirysilverrecord.jsp</result>
-            <result name="uinquirygame">/WEB-INF/pages/manage/uinquirygame.jsp</result>
-            <result name="uinvest">/WEB-INF/pages/manage/uinvest.jsp</result>
-            <result name="uinvestrecord">/WEB-INF/pages/manage/uinvestrecord.jsp</result>
-            <result name="ugiro">/WEB-INF/pages/manage/ugiro.jsp</result>
-            <result name="ugirorecord">/WEB-INF/pages/manage/ugirorecord.jsp</result>
-            <result name="uprofile">/WEB-INF/pages/manage/uprofile.jsp</result>
-            <result name="upassquestion">/WEB-INF/pages/manage/upassquestion.jsp</result>
-            <result name="ubankcard">/WEB-INF/pages/manage/ubankcard.jsp</result>
-            <result name="umaster">/WEB-INF/pages/manage/umaster.jsp</result>
-            <result name="uapprentice">/WEB-INF/pages/manage/uapprentice.jsp</result>
+            <result name="usilverbuy">/WEB-INF/pages/manage/user/usilverbuy.jsp</result>
+            <result name="usilversell">/WEB-INF/pages/manage/user/usilversell.jsp</result>
+            <result name="uinquiryaccount">/WEB-INF/pages/manage/user/uinquiryaccount.jsp</result>
+            <result name="uinquirysilverrecord">/WEB-INF/pages/manage/user/uinquirysilverrecord.jsp</result>
+            <result name="uinquirygame">/WEB-INF/pages/manage/user/uinquirygame.jsp</result>
+            <result name="uinvest">/WEB-INF/pages/manage/user/uinvest.jsp</result>
+            <result name="uinvestrecord">/WEB-INF/pages/user/manage/uinvestrecord.jsp</result>
+            <result name="ugiro">/WEB-INF/pages/manage/user/ugiro.jsp</result>
+            <result name="ugirorecord">/WEB-INF/pages/manage/user/ugirorecord.jsp</result>
+            <result name="uprofile">/WEB-INF/pages/manage/user/uprofile.jsp</result>
+            <result name="upassquestion">/WEB-INF/pages/manage/user/upassquestion.jsp</result>
+            <result name="ubankcard">/WEB-INF/pages/manage/user/ubankcard.jsp</result>
+            <result name="umaster">/WEB-INF/pages/manage/user/umaster.jsp</result>
+            <result name="uapprentice">/WEB-INF/pages/manage/user/uapprentice.jsp</result>
 		</action>
 	</package>
 	<!-- 商品管理 -->
     <package name="grq-usidebar-product" namespace="/pages" extends="grq-sidebar">
 		<action name="product_*" method="{1}" class="productAction">
-			<result name="input">/WEB-INF/pages/manage/product_add.jsp</result>
-			<result name="list">/WEB-INF/pages/manage/product_list.jsp</result>
+			<result name="input">/WEB-INF/pages/manage/product/product_add.jsp</result>
+			<result name="list">/WEB-INF/pages/manage/product/product_list.jsp</result>
 		</action>	
     </package>
 	
 	<!-- 后台管理用户目录管理 -->
 	<package name="grq-msidebar" namespace="/pages" extends="grq-sidebar">
 		<action name="msidebar_*" class="manageAction" method="{1}">
-            <result name="webserver" type="dispatcher">/WEB-INF/pages/manage/webserver.jsp</result>
-            <result name="webdatabase" type="dispatcher">/WEB-INF/pages/manage/webdatabase.jsp</result>
-            <result name="webotherinformation" type="dispatcher">/WEB-INF/pages/manage/webotherinformation.jsp</result>
-            <result name="adminuser" type="dispatcher">/WEB-INF/pages/manage/adminuser.jsp</result>
-            <result name="playeruser" type="dispatcher">/WEB-INF/pages/manage/playeruser.jsp</result>
-            <result name="assetgiro" type="dispatcher">/WEB-INF/pages/manage/assetgiro.jsp</result>
-            <result name="assetsilver" type="dispatcher">/WEB-INF/pages/manage/assetsilver.jsp</result>
-            <result name="assetinvest" type="dispatcher">/WEB-INF/pages/manage/assetinvest.jsp</result>
-            <result name="operatesales" type="dispatcher">/WEB-INF/pages/manage/operatesales.jsp</result>
-            <result name="operateoption" type="dispatcher">/WEB-INF/pages/manage/operateoption.jsp</result>
+            <result name="webserver" type="dispatcher">/WEB-INF/pages/manage/admin/webserver.jsp</result>
+            <result name="webdatabase" type="dispatcher">/WEB-INF/pages/manage/admin/webdatabase.jsp</result>
+            <result name="webotherinformation" type="dispatcher">/WEB-INF/pages/manage/admin/webotherinformation.jsp</result>
+            <result name="adminuser" type="dispatcher">/WEB-INF/pages/manage/admin/adminuser.jsp</result>
+            <result name="playeruser" type="dispatcher">/WEB-INF/pages/manage/admin/playeruser.jsp</result>
+            <result name="assetgiro" type="dispatcher">/WEB-INF/pages/manage/admin/assetgiro.jsp</result>
+            <result name="assetsilver" type="dispatcher">/WEB-INF/pages/manage/admin/assetsilver.jsp</result>
+            <result name="assetinvest" type="dispatcher">/WEB-INF/pages/manage/admin/assetinvest.jsp</result>
+            <result name="operatesales" type="dispatcher">/WEB-INF/pages/manage/admin/operatesales.jsp</result>
+            <result name="operateoption" type="dispatcher">/WEB-INF/pages/manage/admin/operateoption.jsp</result>
 		</action>
 	</package>
 	

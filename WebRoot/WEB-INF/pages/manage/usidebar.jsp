@@ -30,6 +30,9 @@
 <s:url action="usidebar_ubankcard" namespace="/pages"	var="usidebar_ubankcard"></s:url>
 <s:url action="usidebar_umaster" namespace="/pages"	var="usidebar_umaster"></s:url>
 <s:url action="usidebar_uapprentice" namespace="/pages"	var="usidebar_uapprentice"></s:url>
+<!-- 类别 -->
+<s:url action="category_add" namespace="/pages" var="category_add"></s:url>
+<s:url action="category_list" namespace="/pages" var="category_list"></s:url>
 <!-- 商品 -->
 <s:url action="product_add" namespace="/pages" var="product_add"></s:url>
 <s:url action="product_list" namespace="/pages"	var="product_list"></s:url>
@@ -66,6 +69,8 @@
 		</ul>
   		<h3>商品管理</h3>
 		<ul class="hide">
+			<li><a target="mdetail" href="${category_add}">添加类别</a></li>
+			<li><a target="mdetail" href="${category_list}">查看类别</a></li>
 			<li><a target="mdetail" href="${product_add}">添加商品</a></li>
 			<li><a target="mdetail" href="${product_list}">查看商品</a></li>
 		</ul>

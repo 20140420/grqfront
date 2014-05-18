@@ -1,7 +1,5 @@
 package com.grq.controller.action.product;
 
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Controller;
 
 import com.grq.controller.action.BaseAction;
 import com.grq.model.PageModel;
@@ -9,11 +7,10 @@ import com.grq.model.pojo.product.ProductCategory;
 import com.opensymphony.xwork2.ModelDriven;
 /**
  * 商品类别Action对象
- * @author Li Yongqiang
+ * @author 姜泉
  *
  */
-@Scope("prototype")
-@Controller("productCategoryAction")
+
 public class ProductCategoryAction extends BaseAction implements ModelDriven<ProductCategory>{
 	private static final long serialVersionUID = 1L;
 	private ProductCategory category = new ProductCategory();

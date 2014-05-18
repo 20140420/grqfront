@@ -13,8 +13,6 @@
 		<action name="login" class="springLoginAction">
 			<!-- 如果登入成功怎么转到后台 -->
 			<result name="login_user">/WEB-INF/pages/manage/manage.jsp</result>
-			<!-- 
-			<result name="login_user">/WEB-INF/pages/Success.jsp</result> -->
 		</action>
 	</package>
 	

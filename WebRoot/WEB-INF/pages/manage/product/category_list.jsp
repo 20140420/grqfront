@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>    
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>    
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <s:set var="context_path" value="#request.get('javax.servlet.forward.context_path')"></s:set>
 <!-- <script src="${context_path}/js/public.js" type="text/javascript"></script> -->
@@ -30,7 +29,7 @@ td{font-size: 12px;}
 	<tr>
 		<td width="50" height="27" align="center"><s:property value="id"/></td>
 		<td width="150" align="center">
-			<s:a action="category_add" namespace="/admin/product">
+			<s:a action="category_add" namespace="/pages">
 				<s:param name="pid" value="id"></s:param>
 				<s:property value="name"/>
 			</s:a>
@@ -40,14 +39,14 @@ td{font-size: 12px;}
 				没有子类别
 			</s:if>
 			<s:else>
-				<s:a action="category_list" namespace="/admin/product">
+				<s:a action="category_list" namespace="/pages">
 					<s:param name="pid" value="id"></s:param>
 					有<s:property value="children.size"/>个子类别
 				</s:a>
 			</s:else>
 		</td>
 		<td width="100" align="center">
-			<s:a action="category_add" namespace="/admin/product">
+			<s:a action="category_add" namespace="/pages">
 				<s:param name="pid" value="id"/>添加
 			</s:a>
 		</td>
@@ -60,39 +59,55 @@ td{font-size: 12px;}
 			</s:else>
 		</td>
 		<td width="70" align="center">
-			<s:a action="category_edit" namespace="/admin/product">
+			<s:a action="category_edit" namespace="/pages">
 				<s:param name="id" value="id"></s:param>
 				<img src="${context_path}/css/images/rz_15.gif" width="21" height="16" />
 			</s:a>
 		</td>
 		<td width="70" align="center">
-			<s:a action="category_del" namespace="/admin/product">
+			<s:a action="category_del" namespace="/pages">
 				<s:param name="id" value="id"></s:param>
 				<img src="${context_path}/css/images/rz_17.gif" width="15" height="16" />
 			</s:a>
 		</td>
 	</tr>
-	</s:iterator>
+</s:iterator>
 </table>
 </div>
 </div>    
 <div id="right_foot01">
-<s:url action="category_list" namespace="/admin/product" var="first">
+<s:url action="category_list" namespace="/pages" var="first">
 	<s:param name="pageNo" value="1"></s:param>
 	<s:param name="pid" value="pid"></s:param>
 </s:url>
-<s:url action="category_list" namespace="/admin/product" var="previous">
+<s:url action="category_list" namespace="/pages" var="previous">
 	<s:param name="pageNo" value="pageModel.pageNo-1"></s:param>
 	<s:param name="pid" value="pid"></s:param>
 </s:url>
-<s:url action="category_list" namespace="/admin/product" var="last">
+<s:url action="category_list" namespace="/pages" var="last">
 	<s:param name="pageNo" value="pageModel.bottomPageNo"></s:param>
 	<s:param name="pid" value="pid"></s:param>
 </s:url>
-<s:url action="category_list" namespace="/admin/product" var="next">
+<s:url action="category_list" namespace="/pages" var="next">
 	<s:param name="pageNo" value="pageModel.pageNo+1"></s:param>
 	<s:param name="pid" value="pid"></s:param>
 </s:url>
-<s:include value="/WEB-INF/pages/common/page.jsp"></s:include>
+	<div style="text-align: right; margin-top: 20px;margin-right: 20px;">
+	<s:if test="pageModel.pageNo > 1">
+		<a href="${first}">首页</a>　<a href="${previous}">上一页</a>
+	</s:if>
+	<s:else>
+		首页　上一页
+	</s:else>
+	<SPAN style="color: red;">
+		　[<s:property value="pageModel.pageNo"/>]　
+	</SPAN>
+	<s:if test="pageModel.pageNo < pageModel.bottomPageNo">
+		<a href="${next}">下一页</a>　<a href="${last}">尾页</a>
+	</s:if>
+	<s:else>
+		下一页　尾页
+	</s:else>
+	</div>
 </div>
 </div>

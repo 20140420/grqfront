@@ -33,8 +33,18 @@ public class DaoSupport<T> implements BaseDao<T>{
 	protected HibernateTemplate template;
 	
 	public HibernateTemplate getTemplate() {
+		System.out.println("这里是DaoSupport文件getTemplate()");
 		return template;
 	}
+	/**
+	 * 
+	 * @param template
+	 
+	public void setTemplate(HibernateTemplate template) {
+		this.template = template;
+	}
+	*/
+	
 	@Override
 	public void delete(Serializable ... ids) {
 		for (Serializable id : ids) {
@@ -89,6 +99,7 @@ public class DaoSupport<T> implements BaseDao<T>{
 	}
 	@Override
 	public void saveOrUpdate(Object obj) {
+		System.out.println("这里是DaoSupport文件saveOrUpdate()");
 		getTemplate().saveOrUpdate(obj);
 	}
 	/**

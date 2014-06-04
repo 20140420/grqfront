@@ -24,6 +24,9 @@ public class BaseAction extends ActionSupport implements RequestAware,
 	protected int pageNo = 1;//当前页
 	protected int pageSize = 4;//每页显示多少条
 
+	//Action导向页面常量
+	
+	
 	
 	public static final String LIST = "list";
 	public static final String EDIT = "edit";
@@ -61,6 +64,10 @@ public class BaseAction extends ActionSupport implements RequestAware,
 		// 获取Map类型的session赋值
 		this.session = session;
 	}
+	
+	//Action导向页面处理方法
+	
+	
 	
 	// 处理方法
 	public String add() throws Exception {

@@ -30,12 +30,11 @@
 <s:url action="usidebar_ubankcard" namespace="/pages"	var="usidebar_ubankcard"></s:url>
 <s:url action="usidebar_umaster" namespace="/pages"	var="usidebar_umaster"></s:url>
 <s:url action="usidebar_uapprentice" namespace="/pages"	var="usidebar_uapprentice"></s:url>
-<!-- 类别 -->
-<s:url action="category_add" namespace="/pages" var="category_add"></s:url>
-<s:url action="category_list" namespace="/pages" var="category_list"></s:url>
-<!-- 商品 -->
-<s:url action="product_add" namespace="/pages" var="product_add"></s:url>
-<s:url action="product_list" namespace="/pages"	var="product_list"></s:url>
+<!-- 购物车 -->
+<s:url action="#" namespace="/pages" var="#"></s:url>
+<!-- 订单 -->
+<s:url action="#" namespace="/pages" var="#"></s:url>
+
 <!--<div class="sidebar1">-->
 		<h3><a href="index">首页</a></h3>
         <h3><a target="mdetail" href="${usidebar_usilverbuy}">银币买入</a></h3>
@@ -67,11 +66,9 @@
 			<li><a target="mdetail" href="${usidebar_umaster}">师傅</a></li>
 			<li><a target="mdetail" href="${usidebar_uapprentice}">徒弟</a></li>
 		</ul>
-  		<h3>商品管理</h3>
+  		<h3>交割单</h3>
 		<ul class="hide">
-			<li><a target="mdetail" href="${category_add}">添加类别</a></li>
-			<li><a target="mdetail" href="${category_list}">查看类别</a></li>
-			<li><a target="mdetail" href="${product_add}">添加商品</a></li>
-			<li><a target="mdetail" href="${product_list}">查看商品</a></li>
+			<li><a target="mdetail" href="${#}">我的购物车</a></li>
+			<li><a target="mdetail" href="${#}">我的订单</a></li>
 		</ul>
 <!--</div> -->

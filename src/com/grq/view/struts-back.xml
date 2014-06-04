@@ -37,22 +37,8 @@
             <result name="uapprentice">/WEB-INF/pages/manage/user/uapprentice.jsp</result>
 		</action>
 	</package>
-    <!-- 商品类别 -->
-    <package name="grq-usidebar-category" namespace="/pages" extends="grq-sidebar">
-		<action name="category_*" method="{1}" class="productCategoryAction">
-			<result name="list">/WEB-INF/pages/manage/product/category_list.jsp</result>
-			<result name="input">/WEB-INF/pages/manage/product/category_add.jsp</result>
-			<result name="edit">/WEB-INF/pages/manage/product/category_edit.jsp</result>
-		</action>	
-    </package>
-	<!-- 商品管理 -->
-    <package name="grq-usidebar-product" namespace="/pages" extends="grq-sidebar">
-		<action name="product_*" method="{1}" class="productAction">
-			<result name="input">/WEB-INF/pages/manage/product/product_add.jsp</result>
-			<result name="list">/WEB-INF/pages/manage/product/product_list.jsp</result>
-			<result name="edit">/WEB-INF/pages/manage/product/product_edit.jsp</result>
-		</action>	
-    </package>
+	
+
 	
 	<!-- 后台管理用户目录管理 -->
 	<package name="grq-msidebar" namespace="/pages" extends="grq-sidebar">
@@ -69,5 +55,21 @@
             <result name="operateoption" type="dispatcher">/WEB-INF/pages/manage/admin/operateoption.jsp</result>
 		</action>
 	</package>
+    <!-- 商品类别 -->
+    <package name="grq-usidebar-category" namespace="/pages" extends="grq-sidebar">
+		<action name="category_*" method="{1}" class="productCategoryAction">
+			<result name="list">/WEB-INF/pages/manage/product/category_list.jsp</result>
+			<result name="input">/WEB-INF/pages/manage/product/category_add.jsp</result>
+			<result name="edit">/WEB-INF/pages/manage/product/category_edit.jsp</result>
+		</action>	
+    </package>
+	<!-- 商品管理 -->
+    <package name="grq-usidebar-product" namespace="/pages" extends="grq-sidebar">
+		<action name="product_*" method="{1}" class="productAction">
+			<result name="input">/WEB-INF/pages/manage/product/product_add.jsp</result>
+			<result name="list">/WEB-INF/pages/manage/product/product_list.jsp</result>
+			<result name="edit">/WEB-INF/pages/manage/product/product_edit.jsp</result>
+		</action>	
+    </package>
 	
 </struts>    

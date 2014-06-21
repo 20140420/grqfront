@@ -3,7 +3,7 @@
   type="WEB"
   name="grqfront"
   id="myeclipse.1398675864977"
-  context-root="/grqfront"
+  context-root="/grq"
   j2ee-spec="6.0"
   archive="grqfront.war">
   <attributes>
